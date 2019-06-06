@@ -33,15 +33,32 @@
         &-bottom        
             &-list
                 &__link
-                    width: 96px
-// @media (max-width: 1090px)
-//     .menu
-//         &-bottom
-//             &-list
-//                 flex-direction: column
-//                 &__link
-//                     width: 100%
-//                     text-align: left 
-//                     justify-content: flex-start
-//                     padding: 0 15px 
+                    width: 110px
+@media (max-width: 1130px)  
+    .menu
+        &-bottom
+            &-list
+                &__item
+                    &:nth-child(6),
+                    &:nth-child(7),
+                    &:nth-child(8),
+                    &:nth-child(9),
+                    &:nth-child(10)
+                        border-top: none
+                &__link
+                    width: 184px                
+@media (max-width: 1090px)
+    .header
+        &-center
+            & .container
+                max-width: 900px
+    // .menu
+    //     &-bottom
+    //         &-list
+    //             flex-direction: column
+    //             &__link
+    //                 width: 100%
+    //                 text-align: left 
+    //                 justify-content: flex-start
+    //                 padding: 0 15px 
                                  

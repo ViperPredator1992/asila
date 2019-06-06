@@ -743,7 +743,22 @@ button {
     max-width: 992px;
   }
   .menu-bottom-list__link {
-    width: 96px;
+    width: 110px;
+  }
+}
+
+@media (max-width: 1130px) {
+  .menu-bottom-list__item:nth-child(6), .menu-bottom-list__item:nth-child(7), .menu-bottom-list__item:nth-child(8), .menu-bottom-list__item:nth-child(9), .menu-bottom-list__item:nth-child(10) {
+    border-top: none;
+  }
+  .menu-bottom-list__link {
+    width: 184px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .header-center .container {
+    max-width: 900px;
   }
 }
 /*# sourceMappingURL=style.css.map */
