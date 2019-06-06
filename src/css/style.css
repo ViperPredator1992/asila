@@ -454,6 +454,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -539,14 +542,14 @@ button {
 
 .magnifying-glass {
   position: relative;
-  -webkit-transform: translateX(40%);
-      -ms-transform: translateX(40%);
-          transform: translateX(40%);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  -o-transition: transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transform: translateX(85%);
+      -ms-transform: translateX(85%);
+          transform: translateX(85%);
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  -o-transition: transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
 }
 
 .magnifying-glass-path {
@@ -576,9 +579,15 @@ button {
 .input {
   border: 0;
   font-size: 16px;
-  left: 20px;
+  left: 15px;
   position: absolute;
   top: 0;
+}
+
+.input {
+  width: 125px;
+  height: 32px;
+  top: -5px;
 }
 
 .overlay {
@@ -593,7 +602,7 @@ button {
 
 .overlay-1 {
   height: 32px;
-  left: 63px;
+  right: 0;
   top: 0;
   width: 32px;
 }
@@ -605,12 +614,9 @@ button {
   width: 38px;
 }
 
-.overlay:hover {
-  background: rgba(0, 0, 0, 0.08);
-}
-
 .cart {
   position: relative;
+  margin: 0 15px;
 }
 
 .cart-count {
@@ -634,9 +640,16 @@ button {
           justify-content: center;
 }
 
+.account {
+  color: #000000;
+}
+
 .necessary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
