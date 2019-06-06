@@ -4,7 +4,11 @@
         & .container
             display: flex
             align-items: center
-            justify-content: space-between    
+            justify-content: space-between 
+    &-bottom
+        & .container
+            display: flex
+            justify-content: space-between           
 .menu
     &-list
         display: flex
@@ -29,4 +33,67 @@
         list-style: none
         &__item
             &:nth-child(2)
-                margin: 0 16px                  
+                margin: 0 16px 
+.logo
+    display: block
+.search 
+	position: relative
+	width: 170px
+	&.active .magnifying-glass 
+		transform: translateX(-7%)
+		&-path 
+			stroke-dasharray: 580 808
+			stroke-dashoffset: -224px
+	&.active .x 
+		visibility: visible	
+	&.searching .x 
+		stroke-dashoffset: 0	
+	&.active .overlay-1 
+		visibility: hidden
+	&:not(.active) .overlay-2, &:not(.searching) .overlay-2 
+		visibility: hidden
+.magnifying-glass 
+	position: relative
+    top: 5px
+	transform: translateX(40%)
+	transition: transform 500ms
+	&-path 
+		fill: none
+		stroke-dasharray: 210 808
+		stroke-linecap: round
+		stroke-width: 6
+		stroke: $black
+		transition: stroke-dasharray 500ms, stroke-dashoffset 500ms
+.x 
+	fill: none
+	stroke-dasharray: 56 92
+	stroke-dashoffset: -92px
+	stroke-linecap: round
+	stroke-width: 6
+	stroke: $black
+	transition: stroke-dashoffset 500ms
+	visibility: hidden
+.input 
+	border: 0
+	font-size: 16px
+	left: 20px
+	position: absolute
+	top: 0
+.overlay 
+	background: rgba(0,0,0,0)
+	border-radius: 50%
+	cursor: pointer
+	position: absolute
+	transition: background 300ms
+	&-1 
+		height: 32px
+		left: 63px
+		top: 0
+		width: 32px
+	&-2 
+		height: 38px
+		left: 240px
+		top: 0px
+		width: 38px
+	&:hover 
+		background: rgba(0,0,0,0.08)                                 
