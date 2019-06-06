@@ -7,6 +7,7 @@
             justify-content: space-between 
     &-center
         & .container
+            position: relative
             display: flex
             align-items: center
             justify-content: space-between
@@ -38,6 +39,10 @@
                 margin: 0 16px 
 .logo
     display: block
+    position: absolute
+    top: 20px
+    left: 50%
+    transform: translateX(-50%)
 .search 
 	position: relative
 	width: 170px
@@ -125,13 +130,25 @@
     &-list
         display: flex
         flex-wrap: wrap
+        justify-content: center
         list-style: none
         padding: 0
         margin: 0
-        border-top: 1px solid rgba(51, 51, 51, 0.2)
         &__item
             display: flex
+            border-top: 1px solid rgba(51, 51, 51, 0.2)
             border-bottom: 1px solid rgba(51, 51, 51, 0.2)
+            &:nth-child(11),
+            &:nth-child(12),
+            &:nth-child(13),
+            &:nth-child(14),
+            &:nth-child(15),
+            &:nth-child(16),
+            &:nth-child(17),
+            &:nth-child(18),
+            &:nth-child(19),
+            &:nth-child(20)
+                border-top: none   
         &__link
             color: $menu-text
             font-size: 14px

@@ -451,6 +451,7 @@ button {
 }
 
 .header-center .container {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,6 +508,12 @@ button {
 
 .logo {
   display: block;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .search {
@@ -660,17 +667,24 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid rgba(51, 51, 51, 0.2);
 }
 
 .menu-bottom-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-top: 1px solid rgba(51, 51, 51, 0.2);
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu-bottom-list__item:nth-child(11), .menu-bottom-list__item:nth-child(12), .menu-bottom-list__item:nth-child(13), .menu-bottom-list__item:nth-child(14), .menu-bottom-list__item:nth-child(15), .menu-bottom-list__item:nth-child(16), .menu-bottom-list__item:nth-child(17), .menu-bottom-list__item:nth-child(18), .menu-bottom-list__item:nth-child(19), .menu-bottom-list__item:nth-child(20) {
+  border-top: none;
 }
 
 .menu-bottom-list__link {
@@ -695,5 +709,49 @@ button {
 
 .menu-bottom-list__link:hover {
   background: rgba(30, 161, 169, 0.15);
+}
+
+@media (max-width: 1490px) {
+  .header-top .container {
+    max-width: 1200px;
+  }
+  .header-center .container {
+    max-width: 1200px;
+  }
+  .header-bottom .container {
+    max-width: 1200px;
+  }
+  .menu-bottom-list__link {
+    width: 117px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-top .container {
+    max-width: 992px;
+  }
+  .header-center .container {
+    max-width: 992px;
+  }
+  .menu-bottom-list__link {
+    width: 96px;
+  }
+}
+
+@media (max-width: 1090px) {
+  .menu-bottom-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu-bottom-list__link {
+    width: 100%;
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
