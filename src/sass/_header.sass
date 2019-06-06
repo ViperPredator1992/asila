@@ -1,4 +1,32 @@
 .header
     &-top
         background-color: $header
+        & .container
+            display: flex
+            align-items: center
+            justify-content: space-between    
+.menu
+    &-list
+        display: flex
+        align-items: center
         min-height: 40px
+        margin: 0
+        padding: 0
+        list-style: none
+        &__item
+            margin-right: 40px
+            &:last-child
+                margin-right: 0
+        &__link
+            color: $white
+            line-height: 21px 
+.socials
+    &-list
+        display: flex
+        align-items: center
+        margin: 0
+        padding: 0
+        list-style: none
+        &__item
+            &:nth-child(2)
+                margin: 0 16px                  
