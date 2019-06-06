@@ -539,7 +539,6 @@ button {
 
 .magnifying-glass {
   position: relative;
-  position-top: 5px;
   -webkit-transform: translateX(40%);
       -ms-transform: translateX(40%);
           transform: translateX(40%);
@@ -554,7 +553,7 @@ button {
   fill: none;
   stroke-dasharray: 210 808;
   stroke-linecap: round;
-  stroke-width: 6;
+  stroke-width: 8;
   stroke: #000000;
   -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
   -o-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
