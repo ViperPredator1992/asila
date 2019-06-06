@@ -5,11 +5,12 @@
             display: flex
             align-items: center
             justify-content: space-between 
-    &-bottom
+    &-center
         & .container
             display: flex
             align-items: center
-            justify-content: space-between           
+            justify-content: space-between
+            min-height: 138px           
 .menu
     &-list
         display: flex
@@ -120,3 +121,26 @@
 .necessary
     display: flex
     align-items: center
+.menu-bottom
+    &-list
+        display: flex
+        flex-wrap: wrap
+        list-style: none
+        padding: 0
+        margin: 0
+        border-top: 1px solid rgba(51, 51, 51, 0.2)
+        &__item
+            display: flex
+            border-bottom: 1px solid rgba(51, 51, 51, 0.2)
+        &__link
+            color: $menu-text
+            font-size: 14px
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 146px
+            text-align: center
+            min-height: 50px
+            transition: .5s
+            &:hover
+                background: rgba(30, 161, 169, 0.15)   
