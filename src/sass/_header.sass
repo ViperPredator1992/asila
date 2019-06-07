@@ -43,68 +43,80 @@
     top: 20px
     left: 50%
     transform: translateX(-50%)
-.search 
-	position: relative
-	width: 170px
-	&.active .magnifying-glass 
-		transform: translateX(-7%)
-		&-path 
-			stroke-dasharray: 580 808
-			stroke-dashoffset: -224px
-	&.active .x 
-		visibility: visible	
-	&.searching .x 
-		stroke-dashoffset: 0	
-	&.active .overlay-1 
-		visibility: hidden
-	&:not(.active) .overlay-2, &:not(.searching) .overlay-2 
-		visibility: hidden
-.magnifying-glass 
-	position: relative
-	transform: translateX(85%)
-	transition: transform 400ms
-	&-path 
-		fill: none
-		stroke-dasharray: 210 808
-		stroke-linecap: round
-		stroke-width: 8
-		stroke: $black
-		transition: stroke-dasharray 500ms, stroke-dashoffset 500ms
-.x 
-	fill: none
-	stroke-dasharray: 56 92
-	stroke-dashoffset: -92px
-	stroke-linecap: round
-	stroke-width: 6
-	stroke: $black
-	transition: stroke-dashoffset 500ms
-	visibility: hidden
-.input 
-	border: 0
-	font-size: 16px
-	left: 15px  
-	position: absolute
-	top: 0
-.input
-    width: 125px
-    height: 32px
-    top: -5px    
-.overlay 
-	background: rgba(0,0,0,0)
-	border-radius: 50%
-	cursor: pointer
-	position: absolute
-	transition: background 300ms
-	&-1 
-		height: 32px
-		right: 0
-		top: 0
-		width: 32px
-	&-2 
-		height: 38px
-		left: 240px
-		top: 0px
-		width: 38px                                
+// .search 
+// 	position: relative
+// 	width: 170px
+// 	&.active .magnifying-glass 
+// 		transform: translateX(-7%)
+// 		&-path 
+// 			stroke-dasharray: 580 808
+// 			stroke-dashoffset: -224px
+// 	&.active .x 
+// 		visibility: visible	
+// 	&.searching .x 
+// 		stroke-dashoffset: 0	
+// 	&.active .overlay-1 
+// 		visibility: hidden
+// 	&:not(.active) .overlay-2, &:not(.searching) .overlay-2 
+// 		visibility: hidden
+// .magnifying-glass 
+// 	position: relative
+// 	transform: translateX(85%)
+// 	transition: transform 400ms
+// 	&-path 
+// 		fill: none
+// 		stroke-dasharray: 210 808
+// 		stroke-linecap: round
+// 		stroke-width: 8
+// 		stroke: $black
+// 		transition: stroke-dasharray 500ms, stroke-dashoffset 500ms
+// .x 
+// 	fill: none
+// 	stroke-dasharray: 56 92
+// 	stroke-dashoffset: -92px
+// 	stroke-linecap: round
+// 	stroke-width: 6
+// 	stroke: $black
+// 	transition: stroke-dashoffset 500ms
+// 	visibility: hidden
+// .input 
+// 	border: 0
+// 	font-size: 16px
+// 	left: 15px  
+// 	position: absolute
+// 	top: 0
+// .input
+//     width: 125px
+//     height: 32px
+//     top: -5px    
+// .overlay 
+// 	background: rgba(0,0,0,0)
+// 	border-radius: 50%
+// 	cursor: pointer
+// 	position: absolute
+// 	transition: background 300ms
+// 	&-1 
+// 		height: 32px
+// 		right: 0
+// 		top: 0
+// 		width: 32px
+// 	&-2 
+// 		height: 38px
+// 		left: 240px
+// 		top: 0px
+// 		width: 38px 
+form
+    position: relative   
+.search
+    position: relative
+    display: none
+    width: 100%  
+.button-search
+    margin-top: -5px
+    position: absolute
+    top: 0
+    right: 0    
+
 .cart
     position: relative
     margin: 0 15px

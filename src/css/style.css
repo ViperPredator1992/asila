@@ -516,110 +516,21 @@ button {
           transform: translateX(-50%);
 }
 
+form {
+  position: relative;
+}
+
 .search {
   position: relative;
-  width: 170px;
+  display: none;
+  width: 100%;
 }
 
-.search.active .magnifying-glass {
-  -webkit-transform: translateX(-7%);
-      -ms-transform: translateX(-7%);
-          transform: translateX(-7%);
-}
-
-.search.active .magnifying-glass-path {
-  stroke-dasharray: 580 808;
-  stroke-dashoffset: -224px;
-}
-
-.search.active .x {
-  visibility: visible;
-}
-
-.search.searching .x {
-  stroke-dashoffset: 0;
-}
-
-.search.active .overlay-1 {
-  visibility: hidden;
-}
-
-.search:not(.active) .overlay-2, .search:not(.searching) .overlay-2 {
-  visibility: hidden;
-}
-
-.magnifying-glass {
-  position: relative;
-  -webkit-transform: translateX(85%);
-      -ms-transform: translateX(85%);
-          transform: translateX(85%);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  -o-transition: transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.magnifying-glass-path {
-  fill: none;
-  stroke-dasharray: 210 808;
-  stroke-linecap: round;
-  stroke-width: 8;
-  stroke: #000000;
-  -webkit-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
-  -o-transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
-  transition: stroke-dasharray 500ms, stroke-dashoffset 500ms;
-}
-
-.x {
-  fill: none;
-  stroke-dasharray: 56 92;
-  stroke-dashoffset: -92px;
-  stroke-linecap: round;
-  stroke-width: 6;
-  stroke: #000000;
-  -webkit-transition: stroke-dashoffset 500ms;
-  -o-transition: stroke-dashoffset 500ms;
-  transition: stroke-dashoffset 500ms;
-  visibility: hidden;
-}
-
-.input {
-  border: 0;
-  font-size: 16px;
-  left: 15px;
+.button-search {
+  margin-top: -5px;
   position: absolute;
   top: 0;
-}
-
-.input {
-  width: 125px;
-  height: 32px;
-  top: -5px;
-}
-
-.overlay {
-  background: rgba(0, 0, 0, 0);
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  -webkit-transition: background 300ms;
-  -o-transition: background 300ms;
-  transition: background 300ms;
-}
-
-.overlay-1 {
-  height: 32px;
   right: 0;
-  top: 0;
-  width: 32px;
-}
-
-.overlay-2 {
-  height: 38px;
-  left: 240px;
-  top: 0px;
-  width: 38px;
 }
 
 .cart {
