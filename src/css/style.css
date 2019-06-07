@@ -516,23 +516,6 @@ button {
           transform: translateX(-50%);
 }
 
-form {
-  position: relative;
-}
-
-.search {
-  position: relative;
-  display: none;
-  width: 100%;
-}
-
-.button-search {
-  margin-top: -5px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .cart {
   position: relative;
   margin: 0 15px;
@@ -620,6 +603,84 @@ form {
 
 .menu-bottom-list__link:hover {
   background: rgba(30, 161, 169, 0.15);
+}
+
+.search-form-block {
+  width: 0px;
+  height: 30px;
+  background: #41484a;
+  text-align: center;
+  line-height: 45px;
+  padding-right: 50px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+  position: relative;
+}
+
+.search-input {
+  border: 0px;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  width: 0%;
+  padding: 5px 0;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.search-form-block svg {
+  color: #ffffff;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.search-form-block.search-active {
+  width: 250px;
+  padding-left: 25px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.search-input.search-active {
+  width: 98%;
+  padding-left: 5px;
+  -webkit-transition: all 0.5s 0.8s ease;
+  -o-transition: all 0.5s 0.8s ease;
+  transition: all 0.5s 0.8s ease;
+}
+
+.search-form-block__input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.search-form-block__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.search-form-block__input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.search-form-block__input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+}
+
+.search-form-block__button {
+  border: none;
+  padding: 0;
 }
 
 @media (max-width: 1580px) {
