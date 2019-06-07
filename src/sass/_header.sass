@@ -102,44 +102,45 @@
 .search-form-block
     width: 0px
     height: 30px
-    background: #41484a
     text-align: center
-    line-height: 45px
-    padding-right: 50px
+    padding-right: 30px
     transition: all 0.5s ease
     border-radius: 5px
     position: relative
 .search-input
+    height: 30px
     border: 0px
-    border-bottom: 2px solid #fff
     background: transparent
     width: 0%
-    padding: 5px 0
-    outline: none
-    color: #fff
-    font-weight: bold
     transition: all 0.3s ease  
 .search-form-block
     & svg
-        color: #ffffff
         position: absolute
-        right: 15px
-        top: 15px
-        font-size: 22px
-        cursor: pointer 
+        right: 5px
+        top: 5px
+        cursor: pointer
+        background-color: $white 
 .search-form-block
     &.search-active
         width: 250px
-        padding-left: 25px
+        padding-left: 15px
         transition: all 0.5s ease
 .search-input
     &.search-active
-        width: 98%
+        border-bottom: 1px solid rgba(0, 0, 0, 0.4)
+        width: 100%
         padding-left: 5px
         transition: all 0.5s 0.8s ease
 .search-form-block__input::placeholder
     color: rgba(0, 0, 0, 0.4)
-    font-size: 12px
+    font-size: 14px
 .search-form-block__button
     border: none
-    padding: 0            
+    padding: 0 
+    position: absolute;
+    width: 30px
+    height: 30px
+    top: 0
+    right: 0   
+    background-color: $white 
+           
