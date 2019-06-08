@@ -111,7 +111,7 @@
             top: 6px
             left: 50%
             transform: translateX(-50%)
-            max-width: 700px
+            max-width: 650px
             width: 100%
             &-block
                 width: 100%
@@ -131,21 +131,61 @@
                     left: 0 
                     height: 28px
                     border-radius: 10px 0 0 10px
-.cart
-    position: fixed
-    top: 4px
-    right: 45px
-    background: url(../img/cart.png) no-repeat
-    width: 32px
-    height: 32px
-    &-count
-        color: $white
-        background-color: $header
-    & svg
+    .cart
+        position: fixed
+        top: 4px
+        right: 45px
+        background: url(../img/cart.png) no-repeat
+        width: 32px
+        height: 32px
+        &-count
+            color: $white
+            background-color: $header
+        & svg
+            display: none
+    .account
+        position: fixed
+        top: 10px
+        right: 20px
+        & svg
+            color: $white
+@media (max-width: 900px)
+    .socials
         display: none
-.account
-    position: fixed
-    top: 10px
-    right: 20px
-    & svg
-        color: $white                                                                                            
+    .search
+        &-form
+            max-width: 550px
+@media (max-width: 800px)
+    .search
+        &-form
+            max-width: 400px
+@media (max-width: 670px)
+    .search
+        &-form
+            max-width: 300px
+@media (max-width: 550px)
+    .search
+        &-form
+            max-width: 200px
+@media (max-width: 440px)
+    .menu
+        &-lines
+            & span
+                display: none
+    .account
+        right: 12px
+    .cart
+        right: 34px
+    .search
+        &-form
+            left: 45%
+    .header
+        &-center
+            & .container
+                min-height: 120px
+    .logo
+        top: 10px 
+@media (max-width: 375px)
+    .search
+        &-form
+            max-width: 170px                                                                                                                                                                                                    
