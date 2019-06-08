@@ -42,4 +42,35 @@ button
 	border-width: 1px 1px 1px 2px
 .menu-bottom::-webkit-scrollbar-track:hover 
 	border-left: solid 1px #1EA1A9
-	background-color: #ffffff      
+	background-color: #ffffff
+.burger
+    position: absolute
+    z-index: 20
+    top: 7px
+    left: 0
+    width: 30px
+    height: 24px
+    cursor: pointer
+.bottom-line, 
+.center-line,
+.top-line
+    background-color: #fff
+    height: 2px
+    width: 100%
+    position: absolute
+    border-radius: 6px
+    transition: .3s
+.top-line
+    top: 2px
+.center-line
+    top: 11px
+.bottom-line
+    top: 20px
+.burger-open .top-line
+    transform: rotate(45deg)
+    top: 10px 
+.burger-open .center-line
+    opacity: 0 
+.burger-open .bottom-line
+    transform: rotate(-45deg)
+    top: 10px                                   

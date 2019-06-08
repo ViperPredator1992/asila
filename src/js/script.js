@@ -15,4 +15,14 @@ $(document).ready(function () {
         }
     });
 
+    $('.menu-lines').click(function () {
+        if ($('.menu-list').css('display') == 'none') {
+            $('.menu-list').slideDown();
+            $('.burger').addClass('burger-open');
+        } else {
+            $('.menu-list').slideUp();
+            $('.burger').removeClass('burger-open');
+        }
+    });
+
 });

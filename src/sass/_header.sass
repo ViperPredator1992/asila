@@ -26,7 +26,8 @@
                 margin-right: 0
         &__link
             color: $white
-            line-height: 21px 
+            line-height: 21px
+            display: block 
 .socials
     &-list
         display: flex
@@ -66,8 +67,15 @@
     align-items: center
 .menu
     position: relative
-    & span
-        color: $white
+    min-height: 40px
+    &-lines
+        cursor: pointer
+        display: none
+        & span
+            color: $white
+            position: absolute
+            top: 10px
+            margin-left: 40px
     &-bottom
         &-list
             display: flex

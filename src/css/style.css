@@ -453,6 +453,59 @@ button {
   background-color: #ffffff;
 }
 
+.burger {
+  position: absolute;
+  z-index: 20;
+  top: 7px;
+  left: 0;
+  width: 30px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.bottom-line,
+.center-line,
+.top-line {
+  background-color: #fff;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-radius: 6px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.top-line {
+  top: 2px;
+}
+
+.center-line {
+  top: 11px;
+}
+
+.bottom-line {
+  top: 20px;
+}
+
+.burger-open .top-line {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 10px;
+}
+
+.burger-open .center-line {
+  opacity: 0;
+}
+
+.burger-open .bottom-line {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 10px;
+}
+
 .header-top {
   background-color: #1EA1A9;
 }
@@ -507,6 +560,7 @@ button {
 .menu-list__link {
   color: #ffffff;
   line-height: 21px;
+  display: block;
 }
 
 .socials-list {
@@ -576,10 +630,19 @@ button {
 
 .menu {
   position: relative;
+  min-height: 40px;
 }
 
-.menu span {
+.menu-lines {
+  cursor: pointer;
+  display: none;
+}
+
+.menu-lines span {
   color: #ffffff;
+  position: absolute;
+  top: 10px;
+  margin-left: 40px;
 }
 
 .menu-bottom-list {
@@ -934,9 +997,22 @@ button {
   .menu-list__item {
     margin-right: 0;
   }
+  .menu-list__link {
+    padding: 5px 10px;
+  }
+  .menu-lines {
+    display: block;
+    height: 40px;
+  }
   .header-bottom .container {
     padding: 0;
     position: relative;
+  }
+  .header__phone {
+    position: absolute;
+    top: 9px;
+    right: 0;
+    padding-right: 15px;
   }
   .nav-icon-1 {
     display: inline-block;
