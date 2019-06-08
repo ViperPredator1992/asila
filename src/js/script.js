@@ -7,18 +7,12 @@ $(document).ready(function () {
 
     $('.menu-bottom__text').click(function(){
         if ($('.menu-bottom').css('display') == 'none') {
-            
             $('.menu-bottom').slideDown();
+            $('.icon').addClass('open');
         } else {
-            
             $('.menu-bottom').slideUp();
+            $('.icon').removeClass('open');
         }
     });
-    
-    const icons = document.querySelectorAll('.icon');
-    icons.forEach (icon => {  
-        icon.addEventListener('click', (event) => {
-            icon.classList.toggle("open");
-        });
-    });
+
 });
