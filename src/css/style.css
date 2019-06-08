@@ -1085,15 +1085,27 @@ button {
   position: fixed;
   top: 4px;
   right: 45px;
+  background: url(../img/cart.png) no-repeat;
+  width: 32px;
+  height: 32px;
+}
+
+.cart-count {
+  color: #ffffff;
+  background-color: #1EA1A9;
 }
 
 .cart svg {
-  color: #ffffff;
+  display: none;
 }
 
 .account {
   position: fixed;
   top: 10px;
   right: 20px;
+}
+
+.account svg {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
