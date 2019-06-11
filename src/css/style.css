@@ -1028,7 +1028,7 @@ main .section {
 
 .main-block__text-top {
   height: 2px;
-  width: 0;
+  width: 100%;
   background-color: #ffffff;
 }
 
