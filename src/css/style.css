@@ -1196,6 +1196,8 @@ main .section {
 
 .footer-block__logo {
   width: 120px;
+  display: block;
+  text-align: center;
 }
 
 .footer-block-socials {
@@ -1223,11 +1225,11 @@ main .section {
 
 .footer-block__copy {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   text-align: center;
-  width: 120px;
-  margin: 0 0 4px;
+  width: 126px;
+  margin: 0 0 10px;
 }
 
 .footer-block__dev {
@@ -1236,6 +1238,14 @@ main .section {
   font-weight: 300;
   width: 120px;
   font-size: 14px;
+}
+
+.footer-block__dev a {
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  display: block;
+  border-bottom: 1px solid #000000;
 }
 
 @media (max-width: 1580px) {
