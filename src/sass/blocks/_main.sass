@@ -1,10 +1,10 @@
 main
     & .section
-        padding: 70px 0 10px
+        padding: 70px 0 20px
 .main
     &-block
         padding: 0 15px
-        margin: 0 7px 60px
+        margin: 0 7px 50px
         position: relative
         &__image
             & img
@@ -16,16 +16,16 @@ main
             display: block
             text-align: center
             color: $white
-            font-size: 24px
-            line-height: 28px
-            padding: 25px 0
+            font-size: 22px
+            padding: 23px 10px
             &-wrap
                 width: 100%
-                max-width: 165px
+                max-width: 180px
                 position: absolute
                 top: 50%
                 left: 50%
                 transform: translate(-50%,-50%)
+                overflow: hidden
             &-top
                 height: 2px
                 width: 100%
@@ -40,7 +40,14 @@ main
                 background-color: $white
                 position: absolute
                 top: 0
-                right: 0          
+                right: 0
+            &-left
+                width: 2px
+                height: 39px
+                background-color: $white
+                position: absolute
+                bottom: 0
+                left: 0              
         &s
             display: flex
             flex-wrap: wrap
