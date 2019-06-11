@@ -2,13 +2,20 @@
     padding: 34px 0 46px
 .footer
     background-color: $footer
+    position: relative
+    &-audio
+        position: absolute
+        bottom: 40px
+        right: 40px
+        background: url(../img/audio.png) no-repeat
+        width: 24px
+        height: 24px
     &-block
+        width: 136px
         &__logo
-            width: 120px
             display: block
             text-align: center
         &-socials
-            width: 120px
             &-list
                 margin: 7px 0 15px
                 padding: 0
@@ -24,11 +31,10 @@
             font-size: 14px
             line-height: 14px
             text-align: center
-            width: 126px
             margin: 0 0 10px
         &__dev
             text-align: center
-            margin: 0
+            margin: 0 auto
             font-weight: 300
             width: 120px
             font-size: 14px
@@ -37,4 +43,48 @@
                 font-style: italic
                 color: $black 
                 display: block
-                border-bottom: 1px solid $black                           
+                border-bottom: 1px solid $black 
+        &__phone
+            margin-bottom: 8px
+            display: block
+        &__time-work
+            color: $black
+            font-size: 16px
+            line-height: 19px
+            margin: 0 0 20px
+        &__email
+            display: block
+        &__title
+            color: $footer-title
+            font-size: 18px
+            line-height: 21px
+            margin: 0 0 10px
+            font-weight: normal
+        &-list
+            margin: 0
+            padding: 0
+            display: flex
+            flex-direction: column
+            list-style: none
+            &__item
+                margin-bottom: 5px
+            &__link
+                display: block
+                color: $footer-title
+                font-size: 16px
+                line-height: 19px
+                font-weight: 300           
+        &s
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between    
+.footer-phone
+    color: $black
+    font-size: 18px
+    line-height: 21px
+    font-weight: 300 
+.footer-email
+    font-size: 18px
+    line-height: 21px
+    font-weight: 300
+    color: $black                                                 
