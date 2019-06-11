@@ -7,9 +7,27 @@ main
         margin: 0 7px 60px
         position: relative
         &__image
+            &-top
+                width: 165px
+                height: 2px
+                background-color: $white
+                position: absolute
+                top: 45px
+                left: 50%
+                transform: translateX(-50%)
             & img
                 width: 248px
                 border-radius: 5px
+        &:hover
+           &__image
+            &-top
+                width: 165px
+                height: 2px
+                background-color: $white
+                position: absolute
+                top: 45px
+                left: 50%
+                transform: translateX(-50%)         
         &__link
             display: block
         &__text
