@@ -1264,7 +1264,7 @@ main .section {
 
 .footer-block__dev {
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   font-weight: 300;
   width: 120px;
   font-size: 14px;
@@ -1283,6 +1283,22 @@ main .section {
 
 .footer-block__dev a:hover {
   border-bottom: 1px solid #000000;
+}
+
+.footer-block__dj {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 300;
+  width: 120px;
+  font-size: 14px;
+}
+
+.footer-block__dj a {
+  font-weight: bold;
+  font-style: italic;
+  color: #000000;
+  display: block;
+  border-bottom: 1px solid transparent;
 }
 
 .footer-block__phone {
