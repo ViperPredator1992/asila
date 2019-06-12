@@ -562,6 +562,20 @@ button {
   font-weight: normal;
 }
 
+.contact-email {
+  color: #000000;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.contact-phone {
+  color: #000000;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .header-top {
   background-color: #1EA1A9;
 }
@@ -1365,11 +1379,15 @@ main .section {
   margin-bottom: 0;
 }
 
+.contact .container {
+  max-width: 740px;
+}
+
 .contact__title {
   margin: 0 0 50px;
 }
 
-.contact__title p {
+.contact p {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
@@ -1378,7 +1396,7 @@ main .section {
 }
 
 .contact-content {
-  margin: 0 50px;
+  margin: 50px 0;
 }
 
 .contact-content__title {
@@ -1387,6 +1405,11 @@ main .section {
   font-size: 24px;
   line-height: 28px;
   margin: 0 0 10px;
+}
+
+.contact-content__email {
+  display: block;
+  margin-bottom: 50px;
 }
 
 .section-footer {
@@ -1927,6 +1950,18 @@ main .section {
   }
   .about ul li {
     margin-bottom: 10px;
+  }
+  .contact__title {
+    margin: 0 0 25px;
+  }
+  .contact p {
+    margin: 0 0 10px;
+  }
+  .contact-content {
+    margin: 25px 0;
+  }
+  .contact-content__email {
+    margin-bottom: 25px;
   }
 }
 
