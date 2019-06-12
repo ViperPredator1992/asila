@@ -510,6 +510,10 @@ button {
   padding: 70px 0;
 }
 
+.section-selection {
+  padding: 30px 0 70px;
+}
+
 .header-top {
   background-color: #1EA1A9;
 }
