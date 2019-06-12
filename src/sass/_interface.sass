@@ -77,4 +77,26 @@ button
 .section
     padding: 70px 0
 .section-selection
-    padding: 30px 0 70px      
+    padding: 30px 0
+
+.breadcrumds
+    margin: 0 0 20px 20px
+    &-list
+        padding: 0
+        margin: 0
+        list-style: none
+        display: flex
+        align-items: center
+        &__item
+            font-weight: 300
+            font-size: 18px
+            line-height: 21px
+            color: rgba(70, 70, 70, 0.6)
+            &::after
+                content: '>'
+                margin: 0 6px
+            &:last-child
+                &::after
+                    display: none    
+        &__link
+            color: #1EA1A9          

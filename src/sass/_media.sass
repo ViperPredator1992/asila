@@ -8,7 +8,12 @@
         &-block
             padding: 0 10px
         & .container
-            max-width: 1440px    
+            max-width: 1440px
+    .category-selection
+        &-block
+            padding: 0 10px
+        & .container
+            max-width: 1440px             
 @media (max-width: 1490px)
     .header
         &-top
@@ -28,7 +33,10 @@
 @media (max-width: 1456px)
     .main
         & .container
-            max-width: 1160px                    
+            max-width: 1160px
+    .category-selection
+        & .container
+            max-width: 1160px                            
 @media (max-width: 1290px)
     .header
         &-center
@@ -50,7 +58,13 @@
             padding: 0 5px
             margin: 0 5px 50px
         & .container
-            max-width: 1110px                                   
+            max-width: 1110px
+    .category-selection
+        &-block
+            padding: 0 5px
+            margin: 0 5px 50px
+        & .container
+            max-width: 1110px                                               
 @media (max-width: 1130px)  
     .menu
         &-bottom
@@ -69,7 +83,12 @@
         &-block
             margin: 0 5px 30px
         & .container
-            max-width: 840px                        
+            max-width: 840px
+    .category-selection
+        &-block
+            margin: 0 5px 30px
+        & .container
+            max-width: 840px                                
 @media (max-width: 1100px)
     .search-form-block.search-active
         width: 190px
@@ -199,13 +218,21 @@
     .main
         &-block
             margin: 0 0 25px
+    .category-selection
+        &-block
+            margin: 0 0 25px
+    .breadcrumds
+        display: none                    
     main
         & .section
             padding: 40px 0 30px
 @media (max-width: 820px)
     .main
         & .container
-            max-width: 550px                                
+            max-width: 550px
+    .category-selection
+        & .container
+            max-width: 550px                                            
 @media (max-width: 800px)
     .search
         &-form
@@ -221,7 +248,14 @@
                 & img
                     width: 220px
             &s
-                justify-content: center                        
+                justify-content: center
+    .category-selection
+        &-block
+            &__image
+                & img
+                    width: 220px
+            &s
+                justify-content: center                                        
 @media (max-width: 550px)
     .search
         &-form
@@ -231,6 +265,11 @@
             max-width: 360px        
 @media (max-width: 506px)
     .main
+        &-block
+            &__image
+                & img
+                    width: 100%            
+    .category-selection
         &-block
             &__image
                 & img

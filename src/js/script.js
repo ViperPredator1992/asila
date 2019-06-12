@@ -33,7 +33,8 @@ $(document).ready(function () {
     new WOW().init();
     $(window).width(function () {
         $(window).width() < 600 && ($(".wow").removeClass("wow"),
-            $(".main-block.fadeInUp").removeClass("fadeInUp"))
+            $(".main-block.fadeInUp").removeClass("fadeInUp"),
+            $(".category-selection-block.fadeInUp").removeClass("fadeInUp"))
     });
 
     $('.footer-audio__button').click(function () {
