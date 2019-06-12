@@ -1211,12 +1211,15 @@ main .section {
 }
 
 .footer-audio {
+  position: relative;
+}
+
+.footer-audio::before {
+  content: '';
+  background: url(../img/audio.png) no-repeat;
   position: absolute;
   bottom: 40px;
   right: 40px;
-  background: url(../img/audio.png) no-repeat;
-  width: 24px;
-  height: 24px;
 }
 
 .footer-block {

@@ -4,12 +4,17 @@
     background-color: $footer
     position: relative
     &-audio
-        position: absolute
-        bottom: 40px
-        right: 40px
-        background: url(../img/audio.png) no-repeat
-        width: 24px
-        height: 24px
+        position: relative
+        // bottom: 40px
+        // right: 40px
+        // width: 24px
+        // height: 24px
+        &::before
+            content: ''
+            background: url(../img/audio.png) no-repeat
+            position: absolute
+            bottom: 40px
+            right: 40px
     &-block
         width: 136px
         &__logo
@@ -87,4 +92,4 @@
     font-size: 18px
     line-height: 21px
     font-weight: 300
-    color: $black                                                 
+    color: $black                                                     
