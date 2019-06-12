@@ -1211,15 +1211,19 @@ main .section {
 }
 
 .footer-audio {
-  position: relative;
-}
-
-.footer-audio::before {
-  content: '';
-  background: url(../img/audio.png) no-repeat;
   position: absolute;
   bottom: 40px;
   right: 40px;
+  overflow: hidden;
+}
+
+.footer-audio__button {
+  background: url(../img/audio.png) no-repeat;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
 }
 
 .footer-block {
@@ -1271,6 +1275,13 @@ main .section {
   font-style: italic;
   color: #000000;
   display: block;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+.footer-block__dev a:hover {
   border-bottom: 1px solid #000000;
 }
 

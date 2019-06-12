@@ -4,17 +4,17 @@
     background-color: $footer
     position: relative
     &-audio
-        position: relative
-        // bottom: 40px
-        // right: 40px
-        // width: 24px
-        // height: 24px
-        &::before
-            content: ''
+        position: absolute
+        bottom: 40px
+        right: 40px
+        overflow: hidden
+        &__button
             background: url(../img/audio.png) no-repeat
-            position: absolute
-            bottom: 40px
-            right: 40px
+            width: 24px
+            height: 24px
+            padding: 0
+            background-color: transparent
+            border: none
     &-block
         width: 136px
         &__logo
@@ -48,7 +48,10 @@
                 font-style: italic
                 color: $black 
                 display: block
-                border-bottom: 1px solid $black 
+                border-bottom: 1px solid transparent
+                transition: .5s
+                &:hover
+                    border-bottom: 1px solid $black 
         &__phone
             margin-bottom: 8px
             display: block

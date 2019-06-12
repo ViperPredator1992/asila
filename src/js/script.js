@@ -36,4 +36,31 @@ $(document).ready(function () {
             $(".main-block.fadeInUp").removeClass("fadeInUp"))
     });
 
+    $('.footer-audio__button').click(function () {
+        var parent = $(this).parent();
+        var button = $(this);
+        var audio = $('audio', parent)[0];
+        var duration = $('.player-example-duration', parent);
+
+        // переключение состояния плеера и смена картинки на кнопке - плей или пауза
+        if (audio.paused == false) {
+            audio.pause();
+            button.css('background', 'url(img/audio.png)');
+        } else {
+            audio.play();
+            button.css('background', 'url(img/play.png)');
+        }
+
+        // по окончанию трека на кнопку устанавливается картинка плей
+        $(audio).on('ended', function () {
+            button.css('background', 'url(img/audio.png)');
+        });
+
+        // обновление текущей позиции воспроизведения
+        $(audio).on('timeupdate', function () {
+            var date = new Date(audio.currentTime * 1000);
+            duration.html(date.getMinutes() + ':' + date.getSeconds());
+        });
+    });
+
 });
