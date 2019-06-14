@@ -98,10 +98,21 @@
                 max-width: 900px
 @media (max-width: 1040px)
     .footer
-        & .container
-            max-width: 570px
+        &-audio
+            bottom: 240px
         &-block
-            margin-bottom: 40px                    
+            margin-bottom: 40px
+            &s
+                width: 100%
+    .ymap-container
+        position: relative
+        width: 100%
+        background: url(../img/map2.png) no-repeat
+    .loader
+        top: 0
+    .section-footer
+        padding: 35px 0 0
+
 @media (max-width: 992px)
     .menu
         width: 100%
@@ -255,7 +266,9 @@
                 margin: 0 0 25px
             & h2,
             & h3
-                font-size: 22px                                
+                font-size: 22px
+    .ymap-container
+        background-position: center                                                
 @media (max-width: 670px)
     .search
         &-form
@@ -280,8 +293,9 @@
         &-form
             max-width: 200px
     .footer
-        & .container
-            max-width: 360px
+        &-block
+            &s
+                flex-direction: column        
     .about
         &__title
             margin: 0 0 25px
@@ -339,14 +353,12 @@
             max-width: 170px
     .footer
         &-block
+            text-align: center
             &__title
                 text-align: center
             &-list
                 &__link
                     text-align: center
-            &s
-                flex-direction: column
-                align-items: center
 @media (max-width: 340px)
     .cart
         right: 30px
