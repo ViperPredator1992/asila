@@ -81,13 +81,6 @@ $(document).ready(function () {
 
         myMapTemp.behaviors.disable('scrollZoom');
 
-        var myPlacemark = new ymaps.Placemark([45.0355, 38.9753], {}, {
-            iconLayout: 'default#image',
-            iconImageHref: 'img/map-logo.png',
-            iconImageSize: [78, 79],
-            iconImageOffset: [-35, -45]
-        });
-        myMapTemp.geoObjects.add(myPlacemark);
         // Получаем первый экземпляр коллекции слоев, потом первый слой коллекции
         var layer = myMapTemp.layers.get(0).get(0);
 
