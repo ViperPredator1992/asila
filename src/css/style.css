@@ -1615,7 +1615,7 @@ main .section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 55%;
+  width: 50%;
 }
 
 .footer-phone {
