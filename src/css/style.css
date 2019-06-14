@@ -1412,6 +1412,48 @@ main .section {
   margin-bottom: 50px;
 }
 
+.payment .container {
+  max-width: 968px;
+}
+
+.payment__title {
+  margin: 0 0 50px;
+}
+
+.payment-content h2,
+.payment-content h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin: 0 0 10px;
+}
+
+.payment-content h3 {
+  margin: 50px 0 10px;
+}
+
+.payment-content p {
+  margin: 0 0 20px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.payment-content ul {
+  margin: 0 0 50px;
+  padding-left: 30px;
+  max-width: 700px;
+}
+
+.payment-content ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 300;
+}
+
 .section-footer {
   padding: 34px 0 46px;
 }
@@ -1906,6 +1948,9 @@ main .section {
 
 @media (max-width: 768px) {
   .section-main {
+    padding: 30px 0;
+  }
+  .section {
     padding: 30px 0;
   }
 }
