@@ -1455,7 +1455,7 @@ main .section {
 }
 
 .section-footer {
-  padding: 34px 0 46px;
+  padding: 45px 0;
 }
 
 .footer {
@@ -1465,7 +1465,7 @@ main .section {
 
 .footer-audio {
   position: absolute;
-  bottom: 40px;
+  bottom: 15px;
   right: 40px;
   overflow: hidden;
 }
@@ -1609,9 +1609,13 @@ main .section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 50%;
 }
 
 .footer-phone {
@@ -1626,6 +1630,100 @@ main .section {
   line-height: 21px;
   font-weight: 300;
   color: #000000;
+}
+
+.ymap-container {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  width: 55%;
+  overflow: hidden;
+  cursor: pointer;
+  background: url("../img/map.jpg") no-repeat;
+}
+
+#map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 223px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.loader {
+  position: absolute;
+  z-index: 15;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  color: #000000;
+  -webkit-transition: opacity .7s ease;
+  -o-transition: opacity .7s ease;
+  transition: opacity .7s ease;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.loader.is-active {
+  top: 0;
+  opacity: 1;
+}
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  border: solid 8px #ffffff;
+  border-left-color: transparent;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: .5;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1580px) {
