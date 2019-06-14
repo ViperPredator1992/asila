@@ -241,7 +241,21 @@
     .section-main
         padding: 30px 0
     .section
-        padding: 30px 0                
+        padding: 30px 0
+    .payment
+        &__title
+            margin: 0 0 25px
+        &-content
+            & p
+                font-size: 18px
+                margin: 0 0 15px
+            & h3
+                margin: 25px 0 10px
+            & ul
+                margin: 0 0 25px
+            & h2,
+            & h3
+                font-size: 22px                                
 @media (max-width: 670px)
     .search
         &-form
@@ -313,7 +327,12 @@
             & .container
                 min-height: 120px
     .logo
-        top: 10px 
+        top: 10px
+    .payment
+        &-content
+            & h2,
+            & h3
+                text-align: center     
 @media (max-width: 375px)
     .search
         &-form
