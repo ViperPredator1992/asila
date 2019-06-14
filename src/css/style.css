@@ -1615,7 +1615,7 @@ main .section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 55%;
 }
 
 .footer-phone {
@@ -1636,7 +1636,7 @@ main .section {
   position: absolute;
   top: 34px;
   right: 0;
-  width: 55%;
+  width: 40%;
   overflow: hidden;
   cursor: pointer;
   background: url("../img/map.jpg") no-repeat;
