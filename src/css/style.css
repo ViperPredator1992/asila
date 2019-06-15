@@ -1465,6 +1465,24 @@ main .section {
   margin: 0 0 60px 100px;
 }
 
+.favorites-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.favorites-block table tbody td {
+  padding: 0 40px;
+}
+
 .favorites-block__link {
   display: block;
 }
@@ -1479,9 +1497,48 @@ main .section {
 }
 
 .favorites-block__availability {
-  font-weight: 300;
   font-size: 16px;
   line-height: 16px;
+}
+
+.favorites-block__type {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.favorites-block__view {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.favorites-block__price {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.favorites-block__add-cart {
+  background: url(../img/cart1.png) 0 -3px no-repeat;
+  width: 32px;
+  height: 32px;
+  border: none;
+}
+
+.favorites-block__cross {
+  display: block;
+  color: #000000;
+  margin-left: 15px;
+}
+
+.favorites-block__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-footer {

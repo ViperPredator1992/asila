@@ -2,6 +2,14 @@
     &__title
         margin: 0 0 60px 100px
     &-block
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        & table
+            & tbody
+                & td
+                    padding: 0 40px
         &__link
             display: block
         &__image
@@ -10,6 +18,29 @@
         &__name
             margin: 0 0 6px
         &__availability
-            font-weight: 300
             font-size: 16px
-            line-height: 16px                      
+            line-height: 16px
+        &__type
+            font-weight: 300
+            font-size: 18px
+            line-height: 20px
+        &__view
+            font-weight: 300
+            font-size: 18px
+            line-height: 20px
+        &__price
+            font-size: 24px
+            line-height: 28px
+            font-weight: 300
+        &__add-cart
+            background: url(../img/cart1.png) 0 -3px no-repeat
+            width: 32px
+            height: 32px
+            border: none
+        &__cross
+            display: block
+            color: $black
+            margin-left: 15px
+        &__buttons
+            display: flex
+            align-items: center        
