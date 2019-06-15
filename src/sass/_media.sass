@@ -133,6 +133,16 @@
                 & tbody
                     & td
                         padding: 0 15px
+            &__image
+                max-width: 195px
+            &__link
+                & .sec-title
+                    font-size: 18px
+            &__view,
+            &__type
+                font-size: 16px
+            &__price
+                font-size: 18px                                        
 @media (max-width: 992px)
     .menu
         width: 100%
@@ -239,12 +249,26 @@
         right: 20px
         & svg
             color: $white
+@media (max-width: 905px)
+    .favorites
+        &__title
+            margin: 0 0 40px 20px
+        &-block
+            &__image
+                height: auto
+                max-width: 155px            
 @media (max-width: 900px)
     .socials
         display: none
     .search
         &-form
             max-width: 550px
+@media (max-width: 865px)
+    .favorites
+        &-block
+            &s
+                overflow-y: hidden
+                width: 100%            
 @media (max-width: 850px)
     .main
         &-block
