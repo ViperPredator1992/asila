@@ -562,6 +562,13 @@ button {
   font-weight: normal;
 }
 
+.sec-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000;
+  font-weight: 300;
+}
+
 .contact-email {
   color: #000000;
   font-weight: 300;
@@ -1452,6 +1459,29 @@ main .section {
   font-size: 20px;
   line-height: 23px;
   font-weight: 300;
+}
+
+.favorites__title {
+  margin: 0 0 60px 100px;
+}
+
+.favorites-block__link {
+  display: block;
+}
+
+.favorites-block__image {
+  width: 255px;
+  height: 100px;
+}
+
+.favorites-block__name {
+  margin: 0 0 6px;
+}
+
+.favorites-block__availability {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .section-footer {
