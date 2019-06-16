@@ -2256,7 +2256,27 @@ main .section {
         -ms-flex-align: center;
             align-items: center;
   }
+  .favorites-block table tbody tr td {
+    margin-bottom: 8px;
+  }
   .favorites-block__link .sec-title {
+    font-size: 22px;
+  }
+  .favorites-block__view, .favorites-block__type {
+    font-size: 20px;
+    text-align: center;
+  }
+  .favorites-block__view {
+    margin-bottom: 5px;
+  }
+  .favorites-block__price {
+    font-size: 20px;
+  }
+  .favorites-block__image {
+    width: 255px;
+    max-width: 100%;
+  }
+  .favorites-block__availability {
     font-size: 20px;
   }
 }
