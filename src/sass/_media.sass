@@ -128,6 +128,13 @@
             &__price
                 font-size: 18px                                        
 @media (max-width: 992px)
+    .click-search
+        display: block
+        position: absolute
+        top: 10px
+        right: 145px
+        & svg
+            fill: $white
     .menu
         width: 100%
         &-bottom
@@ -170,7 +177,17 @@
             & .cart
                 display: block
             & .account
-                display: block       
+                display: block
+            & .favorite
+                &__link
+                    display: block
+                    color: $white
+                    position: absolute
+                    top: 11px
+                    right: 100px
+                &-count
+                    background-color: $header
+                    color: $white           
         &-bottom
             & .container
                 padding: 0
@@ -185,7 +202,9 @@
         & .account
             display: none
         & .cart
-            display: none            
+            display: none 
+        & .favorite__link
+            display: none               
     .search
         &-input
             width: 100%
