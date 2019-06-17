@@ -1541,6 +1541,10 @@ main .section {
           align-items: center;
 }
 
+.carts__title {
+  margin: 0 0 60px 100px;
+}
+
 .section-footer {
   padding: 45px 0;
 }
