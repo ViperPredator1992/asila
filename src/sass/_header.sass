@@ -52,13 +52,13 @@
     transform: translateX(-50%)
 .cart
     position: relative
-    margin: 0 15px
+    margin: 0 10px
     background: url(../img/cart1.png) no-repeat
     width: 32px
     height: 32px
     &-count
         position: absolute
-        top: 0
+        top: -2px
         right: -5px
         width: 18px
         height: 18px
@@ -73,7 +73,7 @@
     color: $black        
 .necessary
     display: flex
-    align-items: center
+    align-items: flex-end
 .menu
     position: relative
     min-height: 40px
@@ -240,4 +240,21 @@
     top: 4px
 .nav-icon-1.open span:nth-child(8)
     left: 14px
-    bottom: 4px    
+    bottom: 4px 
+.favorite
+    &__link
+        margin: 0 5px 0 10px
+        position: relative
+    &-count
+        position: absolute
+        top: -9px
+        right: -10px
+        width: 18px
+        height: 18px
+        background-color: $white
+        border-radius: 50%
+        font-size: 12px
+        color: $header
+        display: flex
+        align-items: center
+        justify-content: center           
