@@ -174,4 +174,14 @@ $(document).ready(function () {
 
     });
 
+    if (screen.width < 993) {
+        $('.click-search svg').click(function (e) {
+            e.preventDefault();
+            $('.mask, .search-modal').fadeIn();
+        });
+        $('.mask').click(function () {
+            $('.mask, .search-modal').fadeOut();
+        });
+    }
+
 });
