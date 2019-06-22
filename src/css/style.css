@@ -429,7 +429,7 @@ button {
 }
 
 .phone {
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   line-height: 21px;
 }
@@ -654,6 +654,7 @@ button {
   color: #ffffff;
   line-height: 21px;
   display: block;
+  font-size: 16px;
 }
 
 .socials-list {
