@@ -1629,6 +1629,10 @@ main .section {
   font-weight: 300;
 }
 
+.carts-block table {
+  margin: auto;
+}
+
 .carts-block table tbody tr {
   padding-bottom: 25px;
   margin-bottom: 25px;
@@ -1640,8 +1644,42 @@ main .section {
   padding: 0 50px;
 }
 
-.carts-blocks {
-  margin-left: 60px;
+.carts-total {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1221px;
+  margin: auto;
+}
+
+.carts-total__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.carts-total__button {
+  border-radius: 20px;
+  background-color: #13C165;
+  width: 208px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ffffff;
+  margin-left: 85px;
 }
 
 .section-footer {
@@ -1991,6 +2029,9 @@ main .section {
   .header-center .container {
     max-width: 992px;
   }
+  .carts-block table tbody tr td {
+    padding: 0 30px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -2093,6 +2134,18 @@ main .section {
   }
   .section-footer {
     padding: 35px 0 0;
+  }
+  .carts-block__link .sec-title {
+    font-size: 16px;
+  }
+  .carts-block__type, .carts-block__view {
+    font-size: 16px;
+  }
+  .carts-block__price {
+    font-size: 16px;
+  }
+  .carts-block table tbody tr td {
+    padding: 0 20px;
   }
 }
 
@@ -2318,6 +2371,15 @@ main .section {
   main .section {
     padding: 40px 0 30px;
   }
+  .carts-block {
+    overflow-y: hidden;
+  }
+  .carts-block__image {
+    max-width: none;
+  }
+  .carts-block table tbody tr td {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 820px) {
@@ -2460,6 +2522,12 @@ main .section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .carts-block table tbody tr td {
+    padding: 0 10px;
+  }
+  .favorites-block table tbody tr td {
+    padding: 0 10px;
   }
 }
 
