@@ -66,6 +66,10 @@
         & .container
             max-width: 1110px                                                           
 @media (max-width: 1130px)  
+    .footer
+        &-block
+            &s
+                width: 45%
     .menu
         &-bottom
             &-list
@@ -98,15 +102,19 @@
                 max-width: 900px
 @media (max-width: 1040px)
     .footer
+        &-bottom
+            margin: 35px 0
         &-audio
-            bottom: 240px
+            bottom: 400px
         &-block
             margin-bottom: 40px
             &s
                 width: 100%
+                justify-content: space-around
     .ymap-container
         position: relative
         width: 100%
+        right: 0
         background: url(../img/map2.png) no-repeat
     .loader
         top: 0
@@ -132,7 +140,7 @@
         display: block
         position: absolute
         top: 10px
-        right: 145px
+        right: 110px
         & svg
             fill: $white
     .menu
@@ -176,15 +184,13 @@
                 display: block
             & .cart
                 display: block
-            & .account
-                display: block
             & .favorite
                 &__link
                     display: block
                     color: $white
                     position: absolute
                     top: 11px
-                    right: 100px
+                    right: 64px
                 &-count
                     background-color: $header
                     color: $white           
@@ -198,8 +204,6 @@
         display: inline-block
     .necessary
         & .search-form
-            display: none
-        & .account
             display: none
         & .cart
             display: none 
@@ -241,19 +245,13 @@
     .cart
         position: absolute
         top: 4px
-        right: 45px
+        right: 10px
         background: url(../img/cart.png) no-repeat
         &-count
             color: $white
             background-color: $header
         & svg
             display: none
-    .account
-        position: absolute
-        top: 10px
-        right: 20px
-        & svg
-            color: $white
 @media (max-width: 905px)
     .favorites
         &__title
@@ -310,6 +308,9 @@
                 font-size: 22px
     .ymap-container
         background-position: center
+    .footer
+        &-audio
+            right: 20px    
 @media (max-width: 745px)
     .favorites
         &-block
@@ -368,11 +369,7 @@
                     width: 220px
             &s
                 justify-content: center                                        
-@media (max-width: 550px)
-    .footer
-        &-block
-            &s
-                flex-direction: column        
+@media (max-width: 550px)       
     .about
         &__title
             margin: 0 0 25px
@@ -400,7 +397,10 @@
         &-block
             &__image
                 & img
-                    width: 100%            
+                    width: 100%
+    .footer
+        &-block
+            margin-bottom: 54px
 @media (max-width: 440px)
     .menu
         &-lines
@@ -416,7 +416,13 @@
         &-content
             & h2,
             & h3
-                text-align: center     
+                text-align: center
+@media (max-width: 425px)
+    .footer
+        &-block
+            &s
+                flex-direction: column
+                align-items: center                     
 @media (max-width: 375px)
     .footer
         &-block
