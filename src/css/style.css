@@ -1749,7 +1749,7 @@ main .section {
 
 .ymap-container {
   position: absolute;
-  right: 40px;
+  right: 60px;
   width: 40%;
   overflow: hidden;
   cursor: pointer;
@@ -2415,14 +2415,17 @@ main .section {
   }
 }
 
+@media (max-width: 412px) {
+  .footer-bottom__copy {
+    font-size: 16px;
+  }
+  .footer-audio {
+    bottom: 420px;
+  }
+}
+
 @media (max-width: 375px) {
-  .footer-block {
-    text-align: center;
-  }
   .footer-block__title {
-    text-align: center;
-  }
-  .footer-block-list__link {
     text-align: center;
   }
 }

@@ -10,6 +10,7 @@ $(document).ready(function () {
             $("input[type='text']").focus();
         });
     }
+    
     $('.menu-bottom__text, .nav-icon-1').click(function () {
         if ($('.menu-bottom').css('display') == 'none') {
             $('.menu-bottom').slideDown();
