@@ -1493,6 +1493,10 @@ main .section {
   margin: 0 0 60px 100px;
 }
 
+.favorites-block table {
+  margin: auto;
+}
+
 .favorites-block table tbody tr {
   display: block;
   border-bottom: 1px solid rgba(51, 51, 51, 0.2);
@@ -1564,10 +1568,6 @@ main .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.favorites-blocks {
-  margin-left: 60px;
 }
 
 .carts__title {
@@ -1981,18 +1981,15 @@ main .section {
   }
 }
 
-@media (max-width: 1385px) {
+@media (max-width: 1325px) {
   .favorites-block table tbody tr td {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 
 @media (max-width: 1290px) {
   .header-center .container {
     max-width: 992px;
-  }
-  .favorites-block table tbody tr td {
-    padding: 0 30px;
   }
 }
 
@@ -2019,9 +2016,6 @@ main .section {
   }
   .category-selection .container {
     max-width: 1110px;
-  }
-  .favorites-blocks {
-    margin-left: 30px;
   }
 }
 
@@ -2050,15 +2044,6 @@ main .section {
   .category-selection .container {
     max-width: 840px;
   }
-  .favorites-blocks {
-    margin-left: 0;
-  }
-  .favorites-block table {
-    margin: auto;
-  }
-  .favorites-block table tbody tr td {
-    padding: 0 25px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -2067,6 +2052,18 @@ main .section {
   }
   .header-center .container {
     max-width: 900px;
+  }
+  .favorites-block table tbody tr td {
+    padding: 0 15px;
+  }
+  .favorites-block__link .sec-title {
+    font-size: 18px;
+  }
+  .favorites-block__view, .favorites-block__type {
+    font-size: 16px;
+  }
+  .favorites-block__price {
+    font-size: 18px;
   }
 }
 
@@ -2096,21 +2093,6 @@ main .section {
   }
   .section-footer {
     padding: 35px 0 0;
-  }
-}
-
-@media (max-width: 1025px) {
-  .favorites-block table tbody td {
-    padding: 0 15px;
-  }
-  .favorites-block__link .sec-title {
-    font-size: 18px;
-  }
-  .favorites-block__view, .favorites-block__type {
-    font-size: 16px;
-  }
-  .favorites-block__price {
-    font-size: 18px;
   }
 }
 
@@ -2298,13 +2280,10 @@ main .section {
   }
 }
 
-@media (max-width: 865px) {
+@media (max-width: 870px) {
   .favorites-block {
     overflow-y: hidden;
     width: 100%;
-  }
-  .favorites table tbody td {
-    padding: 0 5px;
   }
 }
 
@@ -2391,21 +2370,6 @@ main .section {
 }
 
 @media (max-width: 683px) {
-  .favorites-block table tbody tr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .favorites-block table tbody tr td {
-    margin-bottom: 8px;
-  }
   .favorites-block__link .sec-title {
     font-size: 22px;
   }
