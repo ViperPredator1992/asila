@@ -2285,6 +2285,24 @@ main .section {
     overflow-y: hidden;
     width: 100%;
   }
+  .favorites-block__link .sec-title {
+    font-size: 14px;
+    line-height: normal;
+    margin: 0;
+  }
+  .favorites-block__view, .favorites-block__type {
+    font-size: 14px;
+  }
+  .favorites-block__price {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .favorites-block__cross {
+    margin-left: 5px;
+  }
+  .favorites-block__availability {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -2340,32 +2358,6 @@ main .section {
   }
   .footer-audio {
     right: 20px;
-  }
-}
-
-@media (max-width: 745px) {
-  .favorites-block {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .favorites-block__link .sec-title {
-    font-size: 14px;
-    line-height: normal;
-    margin: 0;
-  }
-  .favorites-block__view, .favorites-block__type {
-    font-size: 14px;
-  }
-  .favorites-block__price {
-    font-size: 14px;
-    line-height: normal;
-  }
-  .favorites-block__cross {
-    margin-left: 5px;
-  }
-  .favorites-block__availability {
-    font-size: 14px;
   }
 }
 
