@@ -1573,6 +1573,57 @@ main .section {
   margin: 0 0 60px 100px;
 }
 
+.carts-block__delete svg {
+  color: #FF2400;
+}
+
+.carts-block__image {
+  width: 150px;
+}
+
+.carts-block__link .sec-title {
+  font-size: 20px;
+}
+
+.carts-block__type, .carts-block__view {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.carts-block__mach input {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  color: #000000;
+  border: none;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.carts-block__mach a {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.carts-block__price {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.carts-block table tbody td {
+  padding: 0 40px;
+}
+
+.carts-blocks {
+  margin-left: 40px;
+}
+
 .section-footer {
   padding: 45px 0;
 }
