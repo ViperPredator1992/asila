@@ -434,6 +434,10 @@ button {
   line-height: 21px;
 }
 
+.input {
+  width: 100%;
+}
+
 .menu-bottom::-webkit-scrollbar {
   width: 8px;
 }
@@ -1700,12 +1704,57 @@ main .section {
           justify-content: space-between;
 }
 
-.checkout-form-left__title {
+.checkout-form-left {
+  max-width: 522px;
+}
+
+.checkout-field__title {
   font-size: 20px;
   color: #000000;
   font-weight: 300;
   line-height: 23px;
   margin: 0 0 16px;
+  display: block;
+}
+
+.checkout-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkout-radio__input {
+  background-color: #ffffff;
+  border: 1px solid #E2E2E2;
+  border-radius: 2px;
+  height: 28px;
+  padding: 0 15px;
+}
+
+.checkout-radio-wrap {
+  margin-bottom: 40px;
+}
+
+.checkout-input-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.radio {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.radio:first-child {
+  margin-right: 30px;
 }
 
 .section-footer {
