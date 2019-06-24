@@ -26,6 +26,9 @@
             font-weight: bold
     &-radio
         display: flex
+        &-pay
+            padding-bottom: 20px
+            border-bottom: 1px solid $border
         &__input
             background-color: $white
             border: 1px solid $border
@@ -42,16 +45,27 @@
             flex-wrap: wrap
             justify-content: space-between
     &-delivery
+        padding-bottom: 20px
+        border-bottom: 1px solid $border
         &-wrap
             display: flex
             flex-wrap: wrap
-            justify-content: space-between                                           
+            justify-content: space-between
+                                                     
 .radio
     font-size: 20px
     color: $black
     font-weight: 300           
     &:first-child
         margin-right: 30px
+.radio-pay
+    font-size: 18px
+    color: $black
+    font-weight: 300
+    display: block
+    margin-bottom: 10px
+    &:last-child
+        margin-bottom: 0       
 .delivery-label
     display: flex
     flex-wrap: wrap
@@ -71,16 +85,16 @@
     & input
         margin-right: 8px
     & i
-        margin-top: 10px
+        margin: 10px 0 0 23px
         font-weight: 300
         font-size: 14px
         line-height: 16px
         color: $black
     &__issue
-        font-size: 14px
+        font-size: 13px
         line-height: 16px
         color: $black
         font-weight: 300
-        margin: 10px 0 0
+        margin: 10px 0 0 23px
     &__text
         width: 200px                      

@@ -1739,6 +1739,11 @@ main .section {
   display: flex;
 }
 
+.checkout-radio-pay {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
 .checkout-radio__input {
   background-color: #ffffff;
   border: 1px solid #E2E2E2;
@@ -1765,6 +1770,11 @@ main .section {
           justify-content: space-between;
 }
 
+.checkout-delivery {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
 .checkout-delivery-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1784,6 +1794,18 @@ main .section {
 
 .radio:first-child {
   margin-right: 30px;
+}
+
+.radio-pay {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.radio-pay:last-child {
+  margin-bottom: 0;
 }
 
 .delivery-label {
@@ -1818,7 +1840,7 @@ main .section {
 }
 
 .delivery-label i {
-  margin-top: 10px;
+  margin: 10px 0 0 23px;
   font-weight: 300;
   font-size: 14px;
   line-height: 16px;
@@ -1826,11 +1848,11 @@ main .section {
 }
 
 .delivery-label__issue {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16px;
   color: #000000;
   font-weight: 300;
-  margin: 10px 0 0;
+  margin: 10px 0 0 23px;
 }
 
 .delivery-label__text {

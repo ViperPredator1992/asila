@@ -272,8 +272,8 @@
                                     <span class="checkout-field__title">Доставка</span>
                                     <div class="checkout-delivery">
                                         <div class="checkout-delivery-wrap">
-                                            <label class="delivery-label">
-                                                <input type="radio" name="delivery-user">
+                                            <label class="delivery-label border-active">
+                                                <input type="radio" name="delivery-user" checked>
                                                 <span class="delivery-label__text">Доставка транспортной компанией</span>
                                                 <i>Самая выгодная для Вас стоимость доставки будет рассчитана отдельно менеджерами интернет-магазина.</i>
                                             </label>
@@ -285,6 +285,23 @@
                                             </label>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="checkout-field">
+                                    <span class="checkout-field__title">Оплата</span>
+                                    <div class="checkout-radio-pay">
+                                        <label class="radio-pay">
+                                            <input type="radio" name="radio-pay-user">
+                                            Наличными
+                                        </label>
+                                        <label class="radio-pay">
+                                            <input type="radio" name="radio-pay-user">
+                                            Банковской картой
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="checkout-field">
+                                    <span class="checkout-field__title">Комментарии к заказу</span>
+                                    <textarea class="checkout-field__comment"></textarea>
                                 </div>
                             </div>
                             <div class="checkout-form-right"></div>
