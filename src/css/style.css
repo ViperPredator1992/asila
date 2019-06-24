@@ -1708,6 +1708,11 @@ main .section {
   max-width: 522px;
 }
 
+.checkout-field {
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
 .checkout-field__title {
   font-size: 20px;
   color: #000000;
@@ -1729,10 +1734,6 @@ main .section {
   border-radius: 2px;
   height: 28px;
   padding: 0 15px;
-}
-
-.checkout-radio-wrap {
-  margin-bottom: 40px;
 }
 
 .checkout-input {
