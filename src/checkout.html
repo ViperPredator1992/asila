@@ -229,38 +229,57 @@
                 <div class="container">
                     <h1 class="sec-title checkout__title">Оформление заказа</h1>
                     <div class="checkout-block">
-                        <form action="#" method="post" class="chechout-form">
+                        <form action="#" method="post" class="checkout-form">
                             <div class="checkout-form-left">
-                                <div class="chechout-field">
+                                <div class="checkout-field">
                                     <span class="checkout-field__title">Информация о покупателе</span>
                                     <div class="checkout-radio">
                                         <div class="checkout-radio-wrap">
                                             <label class="radio">
-                                                <input type="radio" name="radio-payment">
+                                                <input type="radio" name="radio-user">
                                                 Физическое лицо
                                             </label>
                                             <label class="radio">
-                                                <input type="radio" name="radio-payment">
+                                                <input type="radio" name="radio-user">
                                                 Юридическое лицо
                                             </label>
                                         </div>
                                     </div>        
                                 </div>
-                                <div class="chechout-field">
-                                    <span class="checkout-field__title">Ф.И.О *</span>
+                                <div class="checkout-field">
+                                    <span class="checkout-field__title">Ф.И.О <b>*</b></span>
                                     <div class="checkout-radio">
                                         <input type="text" name="name" class="checkout-radio__input input">
                                     </div>        
                                 </div>
-                                <div class="chechout-field">
+                                <div class="checkout-field">
                                     <div class="checkout-input-wrap">
                                         <div class="checkout-input">
-                                            <span class="checkout-field__title">E-mail *</span>
-                                            <input type="email" name="radio-payment" class="checkout-radio__input input">
+                                            <span class="checkout-field__title">E-mail <b>*</b></span>
+                                            <input type="email" name="email" class="checkout-radio__input input">
                                         </div>
                                         <div class="checkout-input">
-                                            <span class="checkout-field__title">Телефон *</span>
-                                            <input type="tel" name="radio-payment" class="checkout-radio__input input">
+                                            <span class="checkout-field__title">Телефон <b>*</b></span>
+                                            <input type="tel" name="phone" class="checkout-radio__input input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="checkout-field">
+                                    <span class="checkout-field__title">Адрес доставки</span>
+                                    <input type="text" name="address" class="checkout-radio__input input">
+                                </div>
+                                <div class="checkout-field">
+                                    <span class="checkout-field__title">Доставка</span>
+                                    <div class="checkout-delivery">
+                                        <div class="checkout-delivery-wrap">
+                                            <label class="delivery-label">
+                                                <input type="radio" name="delivery-user">
+                                                Доставка транспортной компанией
+                                            </label>
+                                            <label class="delivery-label">
+                                                <input type="radio" name="delivery-user">
+                                                Самовывоз
+                                            </label>
                                         </div>
                                     </div>
                                 </div>

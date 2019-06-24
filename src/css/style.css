@@ -1690,7 +1690,7 @@ main .section {
 }
 
 .checkout__title {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
 }
 
 .checkout-form {
@@ -1706,11 +1706,17 @@ main .section {
 
 .checkout-form-left {
   max-width: 522px;
+  width: 100%;
 }
 
 .checkout-field {
-  padding-bottom: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+.checkout-field:nth-child(4) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E2E2E2;
+  margin-bottom: 20px;
 }
 
 .checkout-field__title {
@@ -1718,8 +1724,13 @@ main .section {
   color: #000000;
   font-weight: 300;
   line-height: 23px;
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   display: block;
+}
+
+.checkout-field b {
+  color: #FF2400;
+  font-weight: bold;
 }
 
 .checkout-radio {
@@ -1734,10 +1745,11 @@ main .section {
   border-radius: 2px;
   height: 28px;
   padding: 0 15px;
+  font-size: 16px;
 }
 
 .checkout-input {
-  max-width: 252px;
+  max-width: 245px;
   width: 100%;
 }
 
@@ -1761,6 +1773,19 @@ main .section {
 
 .radio:first-child {
   margin-right: 30px;
+}
+
+.delivery-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+  font-size: 18px;
+  color: #000000;
+  max-width: 254px;
+  width: 100%;
+  border: 1px solid #1EA1A9;
+  border-radius: 2px;
 }
 
 .section-footer {
