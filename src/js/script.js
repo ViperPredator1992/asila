@@ -169,7 +169,6 @@ $(document).ready(function () {
     }
 
     $(function () {
-
         //Запускаем основную функцию
         ymap();
 
@@ -184,5 +183,10 @@ $(document).ready(function () {
             $('.mask, .search-modal').fadeOut();
         });
     }
+
+    $('.delivery-label').click(function () {
+        $('.delivery-label').removeClass('border-active');
+        $(this).addClass('border-active');
+    });
 
 });

@@ -1765,6 +1765,17 @@ main .section {
           justify-content: space-between;
 }
 
+.checkout-delivery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .radio {
   font-size: 20px;
   color: #000000;
@@ -1779,13 +1790,51 @@ main .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 8px 12px;
   font-size: 18px;
   color: #000000;
+  font-weight: 300;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   max-width: 254px;
   width: 100%;
-  border: 1px solid #1EA1A9;
+  border: 1px solid transparent;
   border-radius: 2px;
+}
+
+.delivery-label:hover {
+  border: 1px solid #1EA1A9;
+}
+
+.delivery-label.border-active {
+  border: 1px solid #1EA1A9;
+}
+
+.delivery-label input {
+  margin-right: 8px;
+}
+
+.delivery-label i {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.delivery-label__issue {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: 300;
+  margin: 10px 0 0;
+}
+
+.delivery-label__text {
+  width: 200px;
 }
 
 .section-footer {

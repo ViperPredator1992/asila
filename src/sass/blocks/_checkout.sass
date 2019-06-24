@@ -40,7 +40,12 @@
             width: 100%
             display: flex
             flex-wrap: wrap
-            justify-content: space-between                                   
+            justify-content: space-between
+    &-delivery
+        &-wrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between                                           
 .radio
     font-size: 20px
     color: $black
@@ -49,10 +54,33 @@
         margin-right: 30px
 .delivery-label
     display: flex
-    padding: 5px
+    flex-wrap: wrap
+    padding: 8px 12px
     font-size: 18px
     color: $black
+    font-weight: 300
+    align-items: baseline
     max-width: 254px
     width: 100%
-    border: 1px solid $header
-    border-radius: 2px        
+    border: 1px solid transparent
+    border-radius: 2px
+    &:hover
+        border: 1px solid $header 
+    &.border-active    
+        border: 1px solid $header
+    & input
+        margin-right: 8px
+    & i
+        margin-top: 10px
+        font-weight: 300
+        font-size: 14px
+        line-height: 16px
+        color: $black
+    &__issue
+        font-size: 14px
+        line-height: 16px
+        color: $black
+        font-weight: 300
+        margin: 10px 0 0
+    &__text
+        width: 200px                      
