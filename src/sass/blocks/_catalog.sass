@@ -2,6 +2,11 @@
     padding: 40px 0 60px
     &-section
         margin-top: 30px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        & aside
+            margin-right: 60px
     &-filter
         width: 171px
         border-right: 1px solid $border 
@@ -88,4 +93,27 @@
                 &:last-child
                     margin-bottom: 10px
                 & input
-                    margin-right: 6px                    
+                    margin-right: 6px
+    &-product
+        max-width: 270px
+        width: 100%
+        padding: 36px 22px
+        &__image
+            width: 250px
+            margin: 0 auto 20px
+            display: block
+        &__title
+            font-size: 18px
+            margin: 0 0 12px
+            text-align: center
+            line-height: 21px
+            font-weight: normal
+            color: $product-name 
+    &-dimension
+        &__number
+            font-size: 12px
+            line-height: 14px
+            color: $product-dimensions
+            font-variant: small-caps
+        &s
+            display: flex           
