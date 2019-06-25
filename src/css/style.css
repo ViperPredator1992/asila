@@ -554,8 +554,12 @@ button {
   display: none;
 }
 
-.breadcrumds-list__link {
+.breadcrumds-list__item:last-child .breadcrumds-list__link {
   color: #1EA1A9;
+}
+
+.breadcrumds-list__link {
+  color: rgba(70, 70, 70, 0.6);
 }
 
 .title {
@@ -1991,8 +1995,9 @@ main .section {
   line-height: 16px;
   color: #1EA1A9;
   padding: 0 0 0 5px;
-  margin: 10px 0 15px;
+  margin: 15px 0;
   position: relative;
+  cursor: pointer;
 }
 
 .catalog-filter__name::after {
@@ -2000,6 +2005,15 @@ main .section {
   position: absolute;
   top: 0;
   right: 15px;
+}
+
+.catalog-filter__name.close-filter::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
 }
 
 .catalog-filter__num {

@@ -19,13 +19,18 @@
             line-height: 16px
             color: $header
             padding: 0 0 0 5px
-            margin: 10px 0 15px
+            margin: 15px 0
             position: relative
+            cursor: pointer
             &::after
                 content: url(../img/arrow.png)
                 position: absolute
                 top: 0
                 right: 15px
+            &.close-filter
+                &::after
+                    transform: rotate(180deg) 
+                    transition: .5s   
         &__num
             display: flex
             align-items: center
