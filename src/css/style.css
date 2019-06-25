@@ -1982,6 +1982,85 @@ main .section {
   color: #000000;
   border-bottom: 1px solid #E2E2E2;
   padding: 0 0 10px 5px;
+  margin: 0;
+}
+
+.catalog-filter__name {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1EA1A9;
+  padding: 0 0 0 5px;
+  margin: 10px 0 15px;
+  position: relative;
+}
+
+.catalog-filter__name::after {
+  content: url(../img/arrow.png);
+  position: absolute;
+  top: 0;
+  right: 15px;
+}
+
+.catalog-filter__num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000000;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.catalog-filter__num-line {
+  margin: 0 8px;
+  color: #000000;
+}
+
+.catalog-filter__input {
+  width: 50px;
+  height: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 3px;
+}
+
+.catalog-filter__input:last-child {
+  margin-right: 5px;
+}
+
+.catalog-filter__line {
+  width: 152px;
+  height: 3px;
+  background-color: #1EA1A9;
+  position: relative;
+  margin-left: 5px;
+}
+
+.catalog-filter__line::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #cccccc;
+  position: absolute;
+  top: -4px;
+  left: -2px;
+  border-radius: 50%;
+}
+
+.catalog-filter__line::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #cccccc;
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  border-radius: 50%;
 }
 
 .section-footer {

@@ -12,4 +12,60 @@
             color: $black
             border-bottom: 1px solid $border
             padding: 0 0 10px 5px
-        &__name 
+            margin: 0
+        &__name
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: $header
+            padding: 0 0 0 5px
+            margin: 10px 0 15px
+            position: relative
+            &::after
+                content: url(../img/arrow.png)
+                position: absolute
+                top: 0
+                right: 15px
+        &__num
+            display: flex
+            align-items: center
+            color: $black
+            font-size: 14px
+            margin-bottom: 10px
+            padding-left: 5px
+            &-line
+                margin: 0 8px
+                color: $black
+        &__input
+            width: 50px
+            height: 22px
+            border: 1px solid rgba(0, 0, 0, 0.2)
+            border-radius: 3px
+            font-size: 14px
+            padding: 3px
+            &:last-child
+                margin-right: 5px
+        &__line
+            width: 152px
+            height: 3px
+            background-color: $header
+            position: relative
+            margin-left: 5px
+            &::before
+                content: ''
+                width: 10px
+                height: 10px
+                background-color: $circle
+                position: absolute
+                top: -4px
+                left: -2px 
+                border-radius: 50%
+            &::after
+                content: ''
+                width: 10px
+                height: 10px
+                background-color: $circle
+                position: absolute
+                top: -4px
+                right: -2px 
+                border-radius: 50%            
