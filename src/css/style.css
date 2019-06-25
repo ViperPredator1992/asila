@@ -1692,6 +1692,7 @@ main .section {
 .checkout__title {
   margin: 0 0 40px;
   font-weight: normal;
+  text-align: center;
 }
 
 .checkout-form {
@@ -1700,9 +1701,8 @@ main .section {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .checkout-form-left {
@@ -2605,6 +2605,18 @@ main .section {
   .cart svg {
     display: none;
   }
+  .checkout-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .checkout-form-right {
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 905px) {
@@ -2742,6 +2754,15 @@ main .section {
   .carts-total__price {
     font-size: 20px;
   }
+  .checkout__title {
+    margin: 0 0 25px;
+  }
+  .checkout-field {
+    margin-bottom: 20px;
+  }
+  .checkout-field__title {
+    margin: 0 0 5px;
+  }
 }
 
 @media (max-width: 562px) {
@@ -2784,6 +2805,16 @@ main .section {
   }
   .contact-content__email {
     margin-bottom: 25px;
+  }
+  .checkout-input {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .checkout-input:last-child {
+    margin-bottom: 0;
+  }
+  .delivery-label:first-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -2844,6 +2875,13 @@ main .section {
   .carts-total__button {
     margin-left: 0;
   }
+  .checkout-field__comment {
+    margin-bottom: 5px;
+  }
+  .checkout-field__button {
+    margin: auto;
+    display: block;
+  }
 }
 
 @media (max-width: 412px) {
@@ -2853,11 +2891,27 @@ main .section {
   .footer-audio {
     bottom: 420px;
   }
+  .radio {
+    display: block;
+  }
+  .radio:first-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  .checkout-field__title {
+    margin: 0 0 8px;
+  }
 }
 
 @media (max-width: 375px) {
-  .footer-block__title {
-    text-align: center;
+  .checkout-top {
+    padding: 40px 20px 25px;
+  }
+  .checkout-bottom {
+    padding: 25px 20px;
+  }
+  .checkout-bottom__total {
+    line-height: normal;
   }
 }
 

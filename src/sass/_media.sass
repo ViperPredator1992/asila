@@ -286,6 +286,12 @@
             background-color: $header
         & svg
             display: none
+    .checkout
+        &-form
+            flex-direction: column-reverse
+            align-items: center
+            &-right
+                margin-bottom: 40px            
 @media (max-width: 905px)
     .favorites
         &__title
@@ -398,7 +404,14 @@
             &__button
                 margin-left: 30px
             &__price
-                font-size: 20px                   
+                font-size: 20px
+    .checkout
+        &__title
+            margin: 0 0 25px
+        &-field
+            margin-bottom: 20px
+            &__title
+                margin: 0 0 5px                                   
 @media (max-width: 562px)
     .main
         &-block
@@ -431,7 +444,15 @@
         &-content
             margin: 25px 0
             &__email
-                margin-bottom: 25px                                        
+                margin-bottom: 25px
+    .checkout
+        &-input
+            max-width: 100%
+            margin-bottom: 20px
+            &:last-child
+                margin-bottom: 0 
+    .delivery-label:first-child
+        margin-bottom: 10px                                                                   
 @media (max-width: 506px)
     .main
         &-block
@@ -489,19 +510,38 @@
             &__price
                 margin-bottom: 20px
             &__button
-                margin-left: 0                                                                   
+                margin-left: 0
+    .checkout
+        &-field
+            &__comment
+                margin-bottom: 5px
+            &__button
+                margin: auto
+                display: block                                                                                   
 @media (max-width: 412px)
     .footer
         &-bottom
             &__copy
                 font-size: 16px
         &-audio
-            bottom: 420px                                     
-@media (max-width: 375px)
-    .footer
-        &-block
+            bottom: 420px
+    .radio
+        display: block
+        &:first-child
+            margin-right: 0
+            margin-bottom: 5px
+    .checkout
+        &-field
             &__title
-                text-align: center
+                margin: 0 0 8px
+@media (max-width: 375px)
+    .checkout
+        &-top
+            padding: 40px 20px 25px
+        &-bottom
+            padding: 25px 20px
+            &__total
+                line-height: normal
 @media (max-width: 340px)
     .burger
         left: 10px                                                                                                                                                                                                                                   
