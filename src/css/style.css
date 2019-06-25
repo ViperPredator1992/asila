@@ -2012,7 +2012,6 @@ main .section {
   color: #000000;
   font-size: 14px;
   margin-bottom: 10px;
-  padding-left: 5px;
 }
 
 .catalog-filter__num-line {
@@ -2038,7 +2037,6 @@ main .section {
   height: 3px;
   background-color: #1EA1A9;
   position: relative;
-  margin-left: 5px;
   margin-bottom: 12px;
 }
 
@@ -2066,6 +2064,30 @@ main .section {
 
 .catalog-filter__block {
   border-bottom: 1px solid #E2E2E2;
+}
+
+.catalog-filter__inner {
+  margin-left: 5px;
+}
+
+.catalog-filter__inner label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 6px;
+}
+
+.catalog-filter__inner label:last-child {
+  margin-bottom: 10px;
+}
+
+.catalog-filter__inner label input {
+  margin-right: 6px;
 }
 
 .section-footer {
