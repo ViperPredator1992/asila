@@ -73,7 +73,49 @@
         &-wrap
             display: flex
             flex-wrap: wrap
-            justify-content: space-between                                                 
+            justify-content: space-between 
+    &-product
+        max-width: 356px
+        width: 100%
+        border: 1px solid $header 
+        border-radius: 2px
+    &-top
+        padding: 70px 32px 40px
+        border-bottom: 1px solid $border
+        &__image
+            width: 266px
+            margin: auto
+            display: block
+        &__title
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            margin: 35px 0 10px
+        &__text
+            display: flex
+            justify-content: space-between     
+        &__price
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            margin: 0
+        &__count
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px        
+    &-bottom
+        padding: 40px 32px 32px
+        display: flex
+        align-items: center
+        &__total
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+        &__price
+            font-weight: 300
+            font-size: 24px
+            line-height: 28px
+            margin: 0 0 0 30px                                                                          
 .radio
     font-size: 20px
     color: $black

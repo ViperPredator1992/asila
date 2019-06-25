@@ -1819,6 +1819,76 @@ main .section {
           justify-content: space-between;
 }
 
+.checkout-product {
+  max-width: 356px;
+  width: 100%;
+  border: 1px solid #1EA1A9;
+  border-radius: 2px;
+}
+
+.checkout-top {
+  padding: 70px 32px 40px;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.checkout-top__image {
+  width: 266px;
+  margin: auto;
+  display: block;
+}
+
+.checkout-top__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 35px 0 10px;
+}
+
+.checkout-top__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.checkout-top__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.checkout-top__count {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.checkout-bottom {
+  padding: 40px 32px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.checkout-bottom__total {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.checkout-bottom__price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 0 30px;
+}
+
 .radio {
   font-size: 20px;
   color: #000000;
