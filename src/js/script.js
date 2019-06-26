@@ -199,5 +199,14 @@ $(document).ready(function () {
             $(this).removeClass('close-filter');
         }
     });
+
+   
+    $('.img-filter').click(function () {
+        $('.catalog-section aside').fadeOut();
+    });
+
+    $('.img-filter').click(function () {
+        $('.catalog-section aside').fadeIn();
+    });
     
 });

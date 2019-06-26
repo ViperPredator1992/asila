@@ -2779,8 +2779,8 @@ main .section {
   .img-filter {
     display: block;
     background: url(../img/filter.png) no-repeat;
-    width: 18px;
-    height: 14px;
+    width: 15px;
+    height: 12px;
     position: absolute;
     top: 0;
     right: 35px;
