@@ -4,7 +4,7 @@
         margin-top: 30px
         display: flex
         flex-wrap: wrap
-        justify-content: space-between
+        // justify-content: space-between
         & aside
             margin-right: 60px
     &-filter
@@ -124,7 +124,7 @@
             color: $product-dimensions
             font-variant: small-caps
         &s
-            margin: 12px auto 0
+            margin: 12px auto
             display: flex
             max-width: 190px
             justify-content: space-between
@@ -132,7 +132,23 @@
         max-width: 170px
         display: flex
         justify-content: space-between
+        align-items: center
+        margin: auto
         &__price
             font-size: 16px
             line-height: 19px
-            color: $black                   
+            color: $black
+        &__ord
+            display: flex
+            align-items: center     
+        &__cart
+            background: url(../img/product-cart.png) no-repeat
+            width: 26px
+            height: 26px
+            cursor: pointer 
+        &__favorite
+            background: url(../img/hard.png) no-repeat
+            width: 20px
+            height: 20px 
+            margin-left: 8px
+            cursor: pointer                        
