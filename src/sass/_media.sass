@@ -99,9 +99,22 @@
             max-width: 1110px 
 @media (max-width: 1137px)
     .catalog
-        &-product
-            &s
-                justify-content: center                                                                             
+        & .container
+            position: relative
+        &-products
+            justify-content: center
+        &-section
+            & aside
+                display: none 
+    .img-filter
+        display: block
+        background: url(../img/filter.png) no-repeat
+        width: 18px
+        height: 14px      
+        position: absolute
+        top: 0
+        right: 35px
+        cursor: pointer                                                                                
 @media (max-width: 1130px)  
     .footer
         &-block
