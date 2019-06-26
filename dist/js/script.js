@@ -189,4 +189,15 @@ $(document).ready(function () {
         $(this).addClass('border-active');
     });
 
+    $('.catalog-filter__name').click(function () {
+        if ($(this).next().css('display') == 'block') {
+            $(this).next().slideUp();
+            $(this).addClass('close-filter');
+        }
+        else {
+            $(this).next().slideDown();
+            $(this).removeClass('close-filter');
+        }
+    });
+    
 });
