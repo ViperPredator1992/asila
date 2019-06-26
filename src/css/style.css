@@ -1975,8 +1975,9 @@ main .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .catalog-section aside {
@@ -2120,8 +2121,9 @@ main .section {
 }
 
 .catalog-product {
-  max-width: 270px;
+  max-width: 280px;
   width: 100%;
+  margin: 0 10px;
   padding: 36px 22px;
   -webkit-transition: .4s;
   -o-transition: .4s;
@@ -2156,6 +2158,7 @@ main .section {
 }
 
 .catalog-products {
+  max-width: 1230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
