@@ -2728,6 +2728,21 @@ main .section {
   }
 }
 
+@media (max-width: 1180px) {
+  .catalog .container {
+    max-width: 1130px;
+  }
+  .catalog-product {
+    padding: 25px 10px;
+  }
+  .catalog-product__image {
+    width: 220px;
+  }
+  .catalog-section aside {
+    margin-right: 20px;
+  }
+}
+
 @media (max-width: 1174px) {
   .main-block {
     padding: 0 5px;
@@ -2742,6 +2757,14 @@ main .section {
   }
   .category-selection .container {
     max-width: 1110px;
+  }
+}
+
+@media (max-width: 1137px) {
+  .catalog-products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
