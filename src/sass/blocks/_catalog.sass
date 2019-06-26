@@ -110,10 +110,29 @@
             font-weight: normal
             color: $product-name 
     &-dimension
+        display: flex
+        align-items: center
+        &:nth-child(2)
+            & svg
+                transform: rotate(90deg)
+        &:last-child
+            & svg        
+                transform: rotate(45deg)
         &__number
             font-size: 12px
             line-height: 14px
             color: $product-dimensions
             font-variant: small-caps
         &s
-            display: flex           
+            margin: 12px auto 0
+            display: flex
+            max-width: 190px
+            justify-content: space-between
+    &-buy
+        max-width: 170px
+        display: flex
+        justify-content: space-between
+        &__price
+            font-size: 16px
+            line-height: 19px
+            color: $black                   
