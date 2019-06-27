@@ -17,7 +17,8 @@
             position: relative
             &__title
                 position: relative
-                margin: 0 0 3px  
+                margin: 0 0 3px
+                padding: 0 10px  
             &::after
                 content: ''
                 background: url(../img/hard-hover.png) no-repeat
@@ -31,18 +32,27 @@
                 margin: 0 0 20px
                 font-size: 14px
                 line-height: 16px
-                color: $black            
-                padding-bottom: 20px
+                color: $black
                 border-bottom: 1px solid $border
+                padding: 0 10px 20px 10px
         &-sub
             display: flex
+            margin-bottom: 25px
+            &__price
+                margin-right: 40px
+                font-weight: 300
+                font-size: 24px
+                line-height: 28px
+                color: $black
+                padding-left: 10px
             &__mach
                 display: flex
                 align-items: center
+                padding-right: 10px
             &__minus,
             &__plus
                 color: $black
-                font-size: 20px
+                font-size: 18px
                 width: 22px
                 height: 22px
                 text-align: center 
@@ -55,5 +65,5 @@
                 width: 30px
                 height: 22px
                 text-align: center
-                font-size: 16px
+                font-size: 14px
                 margin: 0 6px               

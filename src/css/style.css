@@ -2435,6 +2435,7 @@ main .section {
 .cart-product-right-top__title {
   position: relative;
   margin: 0 0 3px;
+  padding: 0 10px;
 }
 
 .cart-product-right-top::after {
@@ -2453,14 +2454,24 @@ main .section {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  padding-bottom: 20px;
   border-bottom: 1px solid #E2E2E2;
+  padding: 0 10px 20px 10px;
 }
 
 .cart-product-right-sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 25px;
+}
+
+.cart-product-right-sub__price {
+  margin-right: 40px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  padding-left: 10px;
 }
 
 .cart-product-right-sub__mach {
@@ -2470,11 +2481,12 @@ main .section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 10px;
 }
 
 .cart-product-right-sub__minus, .cart-product-right-sub__plus {
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   width: 22px;
   height: 22px;
   text-align: center;
@@ -2490,7 +2502,7 @@ main .section {
   width: 30px;
   height: 22px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 6px;
 }
 
