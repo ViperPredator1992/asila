@@ -1,23 +1,15 @@
-.wrap-product
+.fotorama
     max-width: 640px
-    margin-top: 50px
-.bottom
-    &-product
-        position: relative
-        &-image
-            width: 60px
-            height: 60px
-            margin-right: 20px
-            
-            z-index: 20
-            &.active-image
-                position: absolute
-                top: 0
-                left: 0
-                z-index: 20
-                background-color: rgba(30, 161, 169, 0.4)
-        &__image
-            position: relative
-            z-index: 0
-            
-               
+    &__thumb-border
+        background: rgba(30, 161, 169, 0.4)
+.cart-product
+    &-left
+        margin-top: 50px
+    &-right
+        max-width: 340px
+        width: 100%
+        position: relative 
+        &__title
+           margin: 0 0 3px  
+        &__favorite
+            background: url(../img/hart-hover)         
