@@ -200,13 +200,22 @@ $(document).ready(function () {
         }
     });
 
+    new WOW().init();
+    $(window).width(function () {
+        $(window).width() < 1048 && ($(".wow").removeClass("wow"),
+            $(".catalog-filter.bounceInLeft").removeClass("bounceInLeft"))
+    });
    
     $('.img-filter').click(function () {
-        $('.catalog-section aside').fadeOut();
+        $('.catalog-section aside').css("display", "block"); 
+        $('.catalog-section aside').css("left", "0"); 
+        $('.catalog-section aside').css("transition", ".4s");
+        $('.mask').fadeIn();
     });
 
-    $('.img-filter').click(function () {
-        $('.catalog-section aside').fadeIn();
+    $('.mask, .close-filter').click(function () {
+        $('.catalog-section aside').css("left", "-190px"); 
+        $('.mask').fadeOut();
     });
     
 });
