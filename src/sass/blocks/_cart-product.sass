@@ -3,13 +3,57 @@
     &__thumb-border
         background: rgba(30, 161, 169, 0.4)
 .cart-product
+    &-wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
     &-left
         margin-top: 50px
     &-right
         max-width: 340px
         width: 100%
-        position: relative 
-        &__title
-           margin: 0 0 3px  
-        &__favorite
-            background: url(../img/hart-hover)         
+        padding: 0 10px
+        &-top
+            position: relative
+            &__title
+                position: relative
+                margin: 0 0 3px  
+            &::after
+                content: ''
+                background: url(../img/hard-hover.png) no-repeat
+                width: 19px
+                height: 19px 
+                position: absolute
+                top: 5px
+                left: 250px
+                cursor: pointer
+            &__article
+                margin: 0 0 20px
+                font-size: 14px
+                line-height: 16px
+                color: $black            
+                padding-bottom: 20px
+                border-bottom: 1px solid $border
+        &-sub
+            display: flex
+            &__mach
+                display: flex
+                align-items: center
+            &__minus,
+            &__plus
+                color: $black
+                font-size: 20px
+                width: 22px
+                height: 22px
+                text-align: center 
+            & input
+                background-color: $white
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2)
+                border-radius: 2px
+                color: $black
+                border: none
+                width: 30px
+                height: 22px
+                text-align: center
+                font-size: 16px
+                margin: 0 6px               
