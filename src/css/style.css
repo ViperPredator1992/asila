@@ -2399,6 +2399,10 @@ main .section {
           animation-name: bounceInLeft;
 }
 
+.wrap-product {
+  max-width: 640px;
+}
+
 .section-footer {
   padding: 45px 0;
 }
@@ -3407,6 +3411,12 @@ main .section {
   .checkout-field__button {
     margin: auto;
     display: block;
+  }
+  .catalog-section {
+    margin-top: 0;
+  }
+  .img-filter {
+    top: -10px;
   }
 }
 
