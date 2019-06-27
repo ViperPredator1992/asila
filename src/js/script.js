@@ -218,4 +218,9 @@ $(document).ready(function () {
         $('.mask').fadeOut();
     });
     
+    $(".bottom-product__image").click(function () {
+        var src = $(this).data("img");
+        $(".top-product__image").attr("src", src);
+    })
+
 });
