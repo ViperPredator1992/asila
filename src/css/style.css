@@ -2549,6 +2549,92 @@ main .section {
   border-bottom: 1px solid #E2E2E2;
 }
 
+.cart-product-right-color {
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-product-right-color:first-child {
+  background-color: #FF6F66;
+}
+
+.cart-product-right-color:nth-child(2) {
+  background-color: #FFA666;
+}
+
+.cart-product-right-color:nth-child(3) {
+  background-color: #AD5853;
+}
+
+.cart-product-right-color:nth-child(4) {
+  background-color: #7C0700;
+}
+
+.cart-product-right-color:nth-child(5) {
+  background-color: #75411C;
+}
+
+.cart-product-right-color:nth-child(6) {
+  background-color: #B6B6B6;
+}
+
+.cart-product-right-color:nth-child(7) {
+  background-color: #8F4747;
+}
+
+.cart-product-right-color:last-child {
+  background-color: #000000;
+}
+
+.cart-product-right-colors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #E2E2E2;
+}
+
+.cart-product-right-color-wrap {
+  padding: 0 10px;
+}
+
+.cart-product-right-color__title {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  font-weight: normal;
+  margin: 20px 0;
+}
+
+.cart-product-right-color-button__left {
+  width: 187px;
+  height: 40px;
+  background-color: #13C165;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+}
+
+.cart-product-right-color-button__right {
+  width: 157px;
+  height: 40px;
+  background-color: #1EA1A9;
+}
+
 /*!
  * Fotorama 4.6.4 | http://fotorama.io/license/
  */
