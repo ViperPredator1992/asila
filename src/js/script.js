@@ -232,4 +232,13 @@ $(document).ready(function () {
         $('.mask, .add-cart-wrap').fadeOut();
     });
 
+    $('.cart-product-right-button__right').click(function (e) {
+        e.preventDefault();
+        $('.mask, .buy-wrap').fadeIn();
+    });
+
+    $('.mask, .buy-wrap-top__close').click(function () {
+        $('.mask, .buy-wrap').fadeOut();
+    });
+
 });
