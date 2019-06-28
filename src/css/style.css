@@ -2610,7 +2610,7 @@ main .section {
   margin: 20px 0;
 }
 
-.cart-product-right-color-button__left {
+.cart-product-right-button__left {
   width: 187px;
   height: 40px;
   background-color: #13C165;
@@ -2627,12 +2627,44 @@ main .section {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 20px;
+  border: none;
+  margin: 20px 0 10px 30px;
 }
 
-.cart-product-right-color-button__right {
+.cart-product-right-button__right {
   width: 157px;
   height: 40px;
   background-color: #1EA1A9;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  margin-left: 30px;
+}
+
+.recommended {
+  margin-top: 50px;
+}
+
+.recommended .container {
+  border-top: 1px solid #E2E2E2;
+}
+
+.recommended__title {
+  margin: 20px 0;
+}
+
+.fotorama__wrap--css3 .fotorama__arr:not(:focus) {
+  display: none !important;
 }
 
 /*!
@@ -3707,6 +3739,14 @@ main .section {
   }
 }
 
+@media (max-width: 1246px) {
+  .recommended .catalog-products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 @media (max-width: 1200px) {
   .header-top .container {
     max-width: 992px;
@@ -3761,6 +3801,9 @@ main .section {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .recommended .catalog-products {
+    margin: auto;
   }
 }
 
@@ -3843,6 +3886,18 @@ main .section {
   }
   .catalog-products {
     max-width: none;
+  }
+  .cart-product-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cart-product-left {
+    margin: 20px 0 50px;
   }
 }
 
@@ -4238,6 +4293,15 @@ main .section {
   }
 }
 
+@media (max-width: 680px) {
+  .cart-product-left {
+    margin: 0 0 40px;
+  }
+  .fotorama {
+    max-width: 400px;
+  }
+}
+
 @media (max-width: 562px) {
   .main-block__image img {
     width: 220px;
@@ -4316,6 +4380,9 @@ main .section {
   .payment-content h2,
   .payment-content h3 {
     text-align: center;
+  }
+  .fotorama {
+    max-width: 300px;
   }
 }
 
