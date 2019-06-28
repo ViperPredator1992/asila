@@ -223,10 +223,22 @@ $(document).ready(function () {
         $('.catalog-section aside').css("left", "-190px"); 
         $('.mask').fadeOut();
     });
-    
-    // $(".bottom-product__image").click(function () {
-    //     var src = $(this).data("img");
-    //     $(".top-product__image").attr("src", src);
-    // });
+
+    $('.cart-product-right-button__left').click(function () {
+        $('.mask, .add-cart-wrap').fadeIn();
+    });
+
+    $('.mask, .add-cart-top__close').click(function () {
+        $('.mask, .add-cart-wrap').fadeOut();
+    });
+
+    $('.cart-product-right-button__right').click(function (e) {
+        e.preventDefault();
+        $('.mask, .buy-wrap').fadeIn();
+    });
+
+    $('.mask, .buy-wrap-top__close').click(function () {
+        $('.mask, .buy-wrap').fadeOut();
+    });
 
 });
