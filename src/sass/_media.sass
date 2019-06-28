@@ -541,7 +541,10 @@
             &:last-child
                 margin-bottom: 0 
     .delivery-label:first-child
-        margin-bottom: 10px                                                                   
+        margin-bottom: 10px
+    .add-cart
+        &-wrap
+            max-width: 95%                                                                       
 @media (max-width: 506px)
     .main
         &-block
@@ -556,6 +559,32 @@
     .footer
         &-block
             margin-bottom: 54px
+    .add-cart
+        &-top
+            margin-bottom: 30px
+        &-center
+            &__name
+                margin: 0 0 20px            
+        &-bottom
+            flex-direction: column
+            align-items: center
+            &__link
+                &:first-child
+                    margin-bottom: 10px
+@media (max-width: 465px)
+    .add-cart
+        &-wrap
+            padding: 28px 20px 20px
+        &-top
+            &__close
+                top: -28px
+                right: -20px
+            &__text
+                font-size: 22px    
+        &-center
+            &__image
+                & img
+                    margin: 0 auto 20px                                                                        
 @media (max-width: 440px)
     .menu
         &-lines
@@ -650,7 +679,11 @@
     .recommended
         margin-top: 30px
         &__title
-            text-align: center                                                                        
+            text-align: center 
+    .add-cart
+        &-top
+            &__text
+                font-size: 18px
 @media (max-width: 375px)
     .checkout
         &-top
@@ -660,7 +693,12 @@
             &__total
                 line-height: normal
     .fotorama
-        max-width: 270px                
+        max-width: 270px 
+    .add-cart
+        &-center
+            &__image
+                & img
+                    max-width: 100%                   
 @media (max-width: 340px)
     .burger
         left: 10px                                                                                                                                                                                                                                   
