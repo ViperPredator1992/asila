@@ -195,16 +195,18 @@ $(document).ready(function () {
         $(this).addClass('border-active');
     });
 
-    $('.catalog-filter__name').click(function () {
-        if ($(this).next().css('display') == 'block') {
-            $(this).next().slideUp();
-            $(this).addClass('close-filter');
-        }
-        else {
-            $(this).next().slideDown();
-            $(this).removeClass('close-filter');
-        }
-    });
+    //if (screen.width < 1048) {
+        $('.catalog-filter__name').click(function () {
+            if ($(this).next().css('display') == 'block') {
+                $(this).next().slideUp();
+                $(this).removeClass('close-filter');
+            }
+            else {
+                $(this).next().slideDown();
+                $(this).addClass('close-filter');
+            }
+        });
+    }
 
     new WOW().init();
     $(window).width(function () {

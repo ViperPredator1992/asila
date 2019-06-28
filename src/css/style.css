@@ -2325,6 +2325,7 @@ main .section {
 }
 
 .close-filter {
+  display: none !important;
   color: #1EA1A9;
   font-size: 30px;
   cursor: pointer;
@@ -2334,10 +2335,10 @@ main .section {
   background-color: #ffffff;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border-radius: 50%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -4169,6 +4170,11 @@ main .section {
   }
   .cart-product-left {
     margin: 20px 0 50px;
+  }
+  .close-filter {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
 }
 
