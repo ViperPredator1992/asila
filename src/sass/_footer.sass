@@ -174,8 +174,62 @@
     max-width: 700px
     height: 36px
     width: 100%
-    z-index: 25 
+    z-index: 25       
 .add-cart
-    max-width: 500px
-    width: 100%
-    background-color: $white                                                                        
+    &-wrap
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%,-50%)
+        z-index: 30
+        max-width: 500px
+        width: 100%
+        background-color: $white
+        padding: 30px 40px
+    &-top
+        display: flex
+        align-items: center
+        margin-bottom: 60px
+        &__chek
+            background: url(../img/chek.png) no-repeat
+            width: 40px
+            height: 40px
+            margin-right: 8px
+        &__text
+            font-size: 24px
+            line-height: 28px
+            color: $black
+            margin-right: 70px
+        &__close
+            width: 30px
+            height: 30px
+            font-size: 30px
+            display: flex
+            align-items: center
+            justify-content: center
+            color: $pages
+    &-center
+        &__image
+            & img
+                display: block
+                margin: 0 auto 40px
+                max-width: 280px
+        &__name
+            text-align: center
+            color: $black
+            font-size: 16px
+            line-height: 19px
+            margin: 0 0 40px
+    &-bottom
+        &__link
+            font-size: 18px
+            line-height: 21px
+            width: 190px
+            height: 40px
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 20px
+            &:first-child
+                background-color: $green
+                color: $white
