@@ -209,7 +209,7 @@ $(document).ready(function () {
     new WOW().init();
     $(window).width(function () {
         $(window).width() < 1048 && ($(".wow").removeClass("wow"),
-            $(".catalog-filter.bounceInLeft").removeClass("bounceInLeft"))
+            $(".catalog-filter.fadeInDown").removeClass("fadeInDown"))
     });
    
     $('.img-filter').click(function () {
