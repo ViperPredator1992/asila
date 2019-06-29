@@ -198,11 +198,11 @@ $(document).ready(function () {
     $('.catalog-filter__name').click(function () {
         if ($(this).next().css('display') == 'block') {
             $(this).next().slideUp();
-            $(this).addClass('close-filter');
+            $(this).addClass('rotate-filter');
         }
         else {
             $(this).next().slideDown();
-            $(this).removeClass('close-filter');
+            $(this).removeClass('rotate-filter');
         }
     });
 
@@ -215,12 +215,12 @@ $(document).ready(function () {
     $('.img-filter').click(function () {
         $('.catalog-section aside').css("display", "block"); 
         $('.catalog-section aside').css("left", "0"); 
-        $('.catalog-section aside').css("transition", ".4s");
+        $('.catalog-section aside').css("transition", ".5s");
         $('.mask').fadeIn();
     });
 
     $('.mask, .close-filter').click(function () {
-        $('.catalog-section aside').css("left", "-190px"); 
+        $('.catalog-section aside').css("left", "-240px"); 
         $('.mask').fadeOut();
     });
 

@@ -2094,7 +2094,7 @@ main .section {
   transition: .5s;
 }
 
-.catalog-filter__name.close-filter::after {
+.catalog-filter__name.rotate-filter::after {
   -webkit-transform: rotate(-180deg);
       -ms-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -4142,16 +4142,34 @@ main .section {
     margin-right: 0;
     display: none;
     position: absolute;
-    top: 50px;
-    left: -170px;
+    top: 40px;
     background-color: #ffffff;
     z-index: 30;
   }
   .catalog-filter {
+    width: 220px;
     visibility: visible !important;
   }
   .catalog-filter__title {
-    padding: 10px 0 10px 5px;
+    padding: 10px 0 10px 8px;
+    font-size: 18px;
+  }
+  .catalog-filter__name {
+    font-size: 18px;
+    padding: 10px 0 10px 8px;
+  }
+  .catalog-filter__inner {
+    margin-left: 8px;
+  }
+  .catalog-filter__inner label {
+    font-size: 16px;
+  }
+  .catalog-filter__input {
+    width: 55px;
+    font-size: 16px;
+  }
+  .catalog-filter__num {
+    font-size: 16px;
   }
   .catalog-product {
     max-width: 300px;
